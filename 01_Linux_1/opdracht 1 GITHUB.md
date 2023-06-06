@@ -15,6 +15,8 @@
 [https://github.com/techgrounds/git-github-fundamentals-shamimkhaliq71]
 [https://www.youtube.com/watch?v=w3jLJU7DT5E]
 [https://www.google.com/search?q=how+to+clone+a+git+repository&client=firefox-b-d&source=lnms&sa=X&ved=2ahUKEwiwhZGZqK7_AhXP5KQKHSzRBrkQ_AUoAHoECAoQAg&biw=1280&bih=567&dpr=1.5]
+## Screenshot
+![screenshot](/00_includes/1.jpg)
 
 ### Ervaren problemen
 [Dit is allemaal erg nieuw voor mij, een nieuwe richting, dus duurde veel langer om dingen te begrijpen. Maar niet schrikken van de nieuwe termen en veel vragen stellen aan anderen en veel Google en Youtube gebruiken]
