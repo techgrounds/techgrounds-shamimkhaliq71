@@ -1,7 +1,7 @@
 # [GITHUB]
 [GITHUB begrijpen en account crieeren]
 
-## Key-terms
+# Key-terms
 [Repository: Opslagplaats om alleen aan een project te werken of te anderen uit nodigen om samen eraan te werken of feedback te ontvangen]
 [Cloning:Copie maken vanuit de Clouds naar je locale computer en sync via GIT met de Cloud versie]
 [Committing/Pushing: Comments en feedback betreft veranderingen in the repository Je kan ook een ReadMe file eraan toevoegen met extra informatie]
