@@ -22,6 +22,9 @@ Deel deze repository met je Learning Coach]
 [https://www.youtube.com/watch?v=vbQ2bYHxxEA]
 [https://www.youtube.com/watch?v=G5X77cnLcvU]
 
+## Screenshot
+![screenshot]
+
 ### Ervaren problemen
 [Zoals eerder ook vermeld, dit is allemaal erg nieuw voor mij, een nieuwe richting, dus duurde veel langer om dingen te begrijpen. Blijven vragen stellen aan anderen en Google en youtube are my best friend. En vooral tijdig aan geven als het echt niet lukt]
 
