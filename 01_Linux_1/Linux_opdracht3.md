@@ -10,10 +10,11 @@ Use a command to write the contents of your text file to the terminal. Make use 
 Read your text file with the command used in the second step, once again filtering for the word ‘techgrounds’. This time, redirect the output to a new file called ‘techgrounds.txt’.]
 
 ### Gebruikte bronnen
-[Plaats hier de bronnen die je hebt gebruikt.]
+[https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/] 
 
 ## Screenshot
-![]
+![echo_output1](/00_includes/Linux/Linux_opdracht3/Echo_output1.PNG)
+
 
 ### Ervaren problemen
 [Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
