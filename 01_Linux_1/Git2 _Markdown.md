@@ -19,8 +19,9 @@ Een link naar een website]~~~~
 ### Gebruikte bronnen
 [https://www.markdownguide.org/cheat-sheet/] [https://www.markdownguide.org/getting-started/] [https://en.wikipedia.org/wiki/WYSIWYG] [https://www.jetbrains.com/help/idea/markdown.html#code-blocks]
 
-### Screenshots 
-
+## Screenshots 
+![Screenshot_markdown1](/00_includes/Markdown/Screenshot_Markdown1.PNG)
+![screenshot_markdown2](/00_includes/Markdown/Screenshot_Markdown2.PNG)
 
 ### Ervaren problemen
 [Was vrij goed te doen, door de gebruikte bronnen]

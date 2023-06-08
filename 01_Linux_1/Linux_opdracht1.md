@@ -11,9 +11,12 @@ When the connection is successful, type whoami in the terminal. This command sho
 ### Gebruikte bronnen
 [https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui] [https://www.codecademy.com/learn/learn-the-command-line/modules/learn-the-command-line-navigation/cheatsheet] 
 
-### Screenshots
+## Screenshots
+![Linux_opdracht1](/00_includes/Linux/Linux_opdracht1/Screenshot_SSH_1.PNG) 
+![Linux_opdracht2](/00_includes/Linux/Linux_opdracht1/Screenshot_%20WHOAMI.PNG)
 
 ### Ervaren problemen
 [Het zag er in eerste instantie straight forward uit en SSh instaleren ging ook goed. Maar om connectie te maken met VM ging wat moeizamer, kreeg steeds fout melding. En extra paar ogen hulp gevaagd en done.]
+
 ### Resultaat
 [zie screenshots as proof]
