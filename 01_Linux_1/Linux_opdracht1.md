@@ -11,7 +11,7 @@ When the connection is successful, type whoami in the terminal. This command sho
 ### Gebruikte bronnen
 [https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui] [https://www.codecademy.com/learn/learn-the-command-line/modules/learn-the-command-line-navigation/cheatsheet] 
 
-![screenshot]()
+### Screenshots
 
 ### Ervaren problemen
 [Het zag er in eerste instantie straight forward uit en SSh instaleren ging ook goed. Maar om connectie te maken met VM ging wat moeizamer, kreeg steeds fout melding. En extra paar ogen hulp gevaagd en done.]
