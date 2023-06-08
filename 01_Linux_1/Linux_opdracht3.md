@@ -10,13 +10,14 @@ Use a command to write the contents of your text file to the terminal. Make use 
 Read your text file with the command used in the second step, once again filtering for the word ‘techgrounds’. This time, redirect the output to a new file called ‘techgrounds.txt’.]
 
 ### Gebruikte bronnen
-[https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/] 
+[https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/] [https://linuxize.com/post/linux-cat-command/]
 
 ## Screenshot
 ![echo_output1](/00_includes/Linux/Linux_opdracht3/Echo_output1.PNG)
 
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+[grep command wilt niet werken en ik blijf het proberen. Het neemt veel tijd in beslag om naar de juiste antwoord te zoeken]
+
 ### Resultaat
 [Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
