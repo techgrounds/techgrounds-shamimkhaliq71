@@ -11,15 +11,13 @@ Use a command to write the contents of your text file to the terminal. Make use 
 Read your text file with the command used in the second step, once again filtering for the word ‘techgrounds’. This time, redirect the output to a new file called ‘techgrounds.txt’.]
 
 ### Gebruikte bronnen
-[https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/] [https://linuxize.com/post/linux-cat-command/] [https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/type] [https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/findstr]
+[https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/] [https://linuxize.com/post/linux-cat-command/] 
 
 ## Screenshot
-![echo_output1](/00_includes/Linux/Linux_opdracht3/Echo_output1.PNG)
-![Files_Filetring_output2](/00_includes/Linux/Linux_opdracht3/Files_Filtering_%20output2.PNG)
-![Redirecting_New_File](/00_includes/Linux/Linux_opdracht3/Redirecting_New_File.PNG)
+![Linux_opdracht3](/00_includes/Linux/Linux_opdracht3/Linux_opdracht3.PNG)
 
 ### Ervaren problemen
-[grep command is not working and I cannot figure out why. taking too much time, but need to keep going. Finally, found away around the problem via Microsoft.com]
+[was logged out the administrator and was not working in my dirctory that's why the command grep was not working, had to logg back in to get end result. And system is very sensitive to spelling]
 
 ### Resultaat
-[See screenshots]
+[See screenshot]
