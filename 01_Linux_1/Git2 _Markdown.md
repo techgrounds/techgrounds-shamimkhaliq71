@@ -1,5 +1,5 @@
 # [**Markdown**]
-[Bestudeer Markdown, WYSIWYG vs WYSIWYM]
+[Bestudeer Markdown, WYSIWYG vs WYSIWYM_3]
 
 ## Key-terms
 [VS Code

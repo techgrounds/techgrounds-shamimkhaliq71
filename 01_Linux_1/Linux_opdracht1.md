@@ -1,5 +1,5 @@
 # [Setting Up]
-[Inloggen op een VM en een SSH connectie maken met VM in Frankfurt]
+[Inloggen op een VM en een SSH connectie maken met VM in Frankfurt_1]
 
 ## Key-terms
 [Linux, like Windows or MacOS, is an operating system] [virtual machine (VM)] [graphical user interface (GUI)] [command line (CLI)] [Secure Shell (SSH)]

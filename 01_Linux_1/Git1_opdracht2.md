@@ -1,5 +1,5 @@
 # [Nieuwe repository]
-[Nieuwe repository aanmaken notities pushen en delen met learning coach]
+[Nieuwe repository aanmaken notities pushen en delen met learning coach_2]
 
 ## Key-terms
 [Repository: Opslagplaats om alleen aan een project te werken of de anderen uit nodigen om samen eraan te werken of feedback te ontvangen]

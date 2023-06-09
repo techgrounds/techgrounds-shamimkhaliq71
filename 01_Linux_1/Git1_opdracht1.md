@@ -1,5 +1,5 @@
 # [GITHUB]
-[GITHUB begrijpen en account crieeren]
+[GITHUB begrijpen en account crieeren_1]
 
 # Key-terms
 [Repository: Opslagplaats om alleen aan een project te werken of de anderen uit nodigen om samen eraan te werken of feedback te ontvangen]

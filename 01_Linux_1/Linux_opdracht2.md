@@ -1,5 +1,5 @@
 # [Files and Directories]
-[Beheren van Files en Directories in Linux ]
+[Beheren van Files en Directories in Linux_2]
 
 ## Key-terms
 [Linux, like Windows or MacOS, is an operating system] [virtual machine (VM)] [graphical user interface (GUI)] [command line (CLI)] [Secure Shell (SSH)]

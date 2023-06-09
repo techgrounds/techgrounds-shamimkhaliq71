@@ -1,5 +1,5 @@
 # [Working with text (CLI)]
-[Every command in Linux has a standard input and output. Both the input and output can be redirected to a file instead of the default. This is called input redirection and output redirection. ]
+[Every command in Linux has a standard input and output. Both the input and output can be redirected to a file instead of the default. This is called input redirection and output redirection_3]
 
 ## Key-terms
 [The standard input (stdin) is the keyboard] 
