@@ -13,13 +13,13 @@ The new user should be able to use ‘sudo’
 Locate the files that store users, passwords, and groups. See if you can find your newly created user’s data in there.]
 
 ### Gebruikte bronnen
-[https://wiki.archlinux.org/title/Users_and_groups] [https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/cc771865(v=ws.11)]
+[https://wiki.archlinux.org/title/Users_and_groups] 
 
 ### Screenshots
-![Newuser_password](/00_includes/Linux/Linux_opdracht4/Newuser_password.PNG)
+![Newuser_simon](/00_includes/Linux/Linux_opdracht4/Newuser_simon.PNG) ![Newuser-homedirectory](/00_includes/Linux/Linux_opdracht4/Newuser_homedirectory.PNG) ![Newuser_mark_admin](/00_includes/Linux/Linux_opdracht4/Newuser_mark_admin.PNG) ![Newuser_passwd_group](/00_includes/Linux/Linux_opdracht4/Newuser_passwd_group.PNG) ![Sudo_rechten_mark](/00_includes/Linux/Linux_opdracht4/Sudo_Rechten_Mark.PNG)![Newuser_data](/00_includes/Linux/Linux_opdracht4/Newuser_data.PNG)
 
 ### Ervaren problemen
-[Same issue as last opdracht 3, command not working, so, searched and found sollution on Microsaft.com]
+[Same issue as last opdracht 3, command not working,and User mark didsnt have all the right yet, because he was created with a lower command (useradd instead of adduser) and that makes a differencet to the right a user has]
 
 ### Resultaat
-[See screenshots.]
+[See screenshots]
