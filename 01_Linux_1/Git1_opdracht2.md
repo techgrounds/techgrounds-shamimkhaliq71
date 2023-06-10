@@ -11,11 +11,15 @@
 [Issues: met Issues kan je, je werk volgen op GitHub, waar de ontwikkeling plaatsvindt. Dit maak je werk overzichtelijk. Issues kan je koppelen aan een Pull om aan te geven dat je bezig bent]
 
 ## Opdracht 2
-[Maak een nieuwe repository aan voor je portfolio
-Push je notities naar de repository
-Deel deze repository met je Learning Coach]
+
+- Maak een nieuwe repository aan voor je portfolio
+- Push je notities naar de repository
+- Deel deze repository met je Learning Coach.
+
+
 
 ### Gebruikte bronnen
+
 [https://github.com/techgrounds/git-github-fundamentals-shamimkhaliq71]
 [https://www.youtube.com/watch?v=w3jLJU7DT5E]
 [https://www.google.com/search?q=how+to+clone+a+git+repository&client=firefox-b-d&source=lnms&sa=X&ved=2ahUKEwiwhZGZqK7_AhXP5KQKHSzRBrkQ_AUoAHoECAoQAg&biw=1280&bih=567&dpr=1.5]
@@ -27,7 +31,9 @@ Deel deze repository met je Learning Coach]
 ![JH_clone](/00_includes/Git_1/Git_opdracht2/JH-Clone2.jpg)
 
 ### Ervaren problemen
-[Zoals eerder ook vermeld, dit is allemaal erg nieuw voor mij, een nieuwe richting, dus duurde veel langer om dingen te begrijpen. Blijven vragen stellen aan anderen en Google en youtube are my best friend. En vooral tijdig aan geven als het echt niet lukt]
+
+.Zoals eerder ook vermeld, dit is allemaal erg nieuw voor mij, een nieuwe richting, dus duurde veel langer om dingen te begrijpen. Blijven vragen stellen aan anderen en Google en youtube are my best friend. En vooral tijdig aan geven als het echt niet lukt.
 
 ### Resultaat
-[Het resultaat is te vinden in Github, zoals men kan zien, is allemaal goed doorgekomen via VS Code en gecommit en gepushed via Github desktop]
+
+Het resultaat is te vinden in Github, zoals men kan zien, is allemaal goed doorgekomen via VS Code en gecommit en gepushed via Github desktop.
