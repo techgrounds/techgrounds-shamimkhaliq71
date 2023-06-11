@@ -5,18 +5,19 @@ How to manage processes in Linux. Processes in Linux can be divided into three c
 
 ## Key-terms
 
-Daemons, Services, and Programs. ssh (secure shell), $PATH variable, PID (Process ID) number
+Daemons, Services, and Programs, Telnetd, Inetd, ssh (secure shell), PID (Process ID) number, systemctl, 
 
 ## Opdracht 6
 
 - Start the telnet daemon.
 - Find out the PID of the telnet daemon.
 - Find out how much memory telnetd is using.
-![PID_Memory](/00_includes/Linux/Linux_opdracht6/Install_telnetd.PNG)
+
+![PID_Memory](/00_includes/Linux/Linux_opdracht6/PID_Memory.PNG)
 
 - Stop or kill the telnetd process.
 
-
+![Stop_telnetd_process](/00_includes/Linux/Linux_opdracht6/Stop_telnetd_process.PNG)
 
 
 ### Gebruikte bronnen
@@ -26,7 +27,7 @@ Daemons, Services, and Programs. ssh (secure shell), $PATH variable, PID (Proces
 
 ### Ervaren problemen
 
-Couldn't open Telnetd afterinstalling it, but found out that on my Linux it's a different version named De Service and after using the right commands I was good to go.
+Couldn't open Telnetd afterinstalling it, but found out that on my Linux it's a different named differetly,De Service and after using the right commands with sudo at the start, I was good to go.
 
 ### Resultaat
-1st 3 questions see 1st screenshot,
+1st 3 questions see 1st screenshot, and 4th question see 2nd screenshot.
