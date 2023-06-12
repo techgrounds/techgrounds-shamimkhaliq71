@@ -1,15 +1,16 @@
 # Retro van [Shamim_Khaliq_Groep 3] van week [1]
-Scrum master: Geef iedereen 10 minuten om zijn antwoorden op deze vragen te bedenken. Schrijf daarna de antwoorden op. 
 
-Iedereen: Gebruik 10 minuten om de antwoorden te bedenken op de gegeven vragen. Bespreek de antwoorden met elkaar.
-
-Achteraf: Plaats een kopie van de retro in je eigen repository.
+De eerste week was erg zwaar voor mij, maar ook super leuk. Ik heb heelveel geleerd. Ik besef heel goed dat anderen meer of in sommige gevallen veel meer kennis hebben dan ik heb, maar daardoor laat ik me niet afschikken. Ik ben nieuw in dit veld en moet dus vanaf het begin beginnen, veel vragen stellen en meer uizoeken en dat neemt wel veel tijd in beslag. Het voelde alsof ik me in een jungle van systemen en commands waande, maar heb veel hulp gehad van de heren in mijn groep, vooral Jordan na onze les.
 
 ## Wat ging goed?
- - Voorbeeld: We gebruikten de Pomedoro techniek en dat was heel fijn om mee te werken.
 
+We hebben voor onze presentatie Google drive gebruikt en daarmee zaten we op 1 lijn en leverenden een mooie presentatie. En voor de Retro opdracht een groep aangemaakt en dat maakt het communiseren heel makkelijk.
+Samenwerking was heel natuurlijk en een fijne groep om mee te werken. Iedereen deed zijn/haar ding, maar was zeker behulpzaam.
+ 
 ## Wat kan beter?
- - Voorbeeld: We deden iets te lang over onze standups.
+
+ Documentatie voor mij persoonlijk kan beter en iets meer lezen en dingen begrijpen, voor dat ik aan de opdrachten begin. Ik zit soms vast met een opdreacht en kan het iets simples zijn, maar ik zie dat niet, dan probeer ik het te lang zelf op te lossen. Moet eerder aangeven bij de groep.
 
 ## Wat kunnen wij doen om het te verbeteren?
- - Voorbeeld: Tijdens een standup gaan wij elkaar beter op de rit houden.
+
+ Ik moet mijn camera niet te vaak uitzetten en misschien een idee om een headset aan te schaffen, omdat ik soms niet goed te verstaan ben door dat de microfoon op mijn leenlaptop niet super goed is.
