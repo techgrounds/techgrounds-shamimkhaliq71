@@ -37,14 +37,9 @@ Bash scripting, $PATH, shebang, apache2
 ![Random_Nr](/00_includes/Linux/Linux_opdracht7/Random_Nr.PNG)
 
 - Stores it in a variable
-
-
-
 - Appends the number to a text file.
 
-
-
-
+![Variable](/00_includes/Linux/Linux_opdracht7/Variable.PNG)
 
 ### Gebruikte bronnen
 
@@ -53,7 +48,7 @@ Bash scripting, $PATH, shebang, apache2
 
 ### Ervaren problemen
 
-I found this assignment difficult, especially after performing a command, how to interpret the output properly to move to the next part. And Installing Apache2 was not so straight forward as it seemed.
+I found this assignment difficult, especially after performing a command, how to interpret the output properly to move to the next part. And Installing Apache2 was not so straight forward as it seemed. Also Nano got stuck several times and because there was 1 small mistake in the command, it just kept giving error. 
 
 ### Resultaat
 
