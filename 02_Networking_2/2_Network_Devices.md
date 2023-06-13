@@ -5,13 +5,7 @@ Networking hardware, also known as network equipment or computer networking devi
 
 ## Key-terms
 
-Router
-Switch
-Firewall
-Modem
-Access point 
-NIC
-Repeater
+Router, Switch, Firewall, Modem, Access point, NIC, Repeater
 
 ## Opdracht
 
