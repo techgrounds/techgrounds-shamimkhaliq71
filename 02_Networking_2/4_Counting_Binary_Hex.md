@@ -19,13 +19,33 @@ Translate the following decimal numbers into binary:
 
 Decimal
 Binary
-16
+16: 16:2=8 remainder  0
+8:2= 4 remainder 0
+4:2= 2 remainder 0
+2:2= 1 remainder 0
+1:2= 0 remainder 1
+Binary = 10000
 
-128
+128: 128:2= 64 remainder 0
+64:2= 32 remainder 0
+32:2= 16 remainder 0
+16:2= 8 remainder 0
+8:2= 4 remainder 0
+4:2= 2 remainder 0
+2:2=1 remainder 0
+1:2=0 remainder 1
+Binary = 10000000
 
-228
+228:2= 114 remainder 0
+114:2= 57 remainder 0
+57:2= 28 remainder 1
+28:2= 14 remainder 0
+7:2= 3 remainder 1
+3:2= 1 remainder 1
+1:2= 0 remainder 1
+Binary =1110100
 
-112
+112:2= 
 
 73
 ~~~~
