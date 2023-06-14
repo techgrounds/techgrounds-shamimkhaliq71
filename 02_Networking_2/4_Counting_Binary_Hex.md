@@ -45,14 +45,28 @@ Binary = 10000000
 1:2= 0 remainder 1
 Binary =1110100
 
-112:2= 
+112:2= 56 remainder 0
+56:2= 28 remainder 0
+28:2= 14 remainder 0
+14:2= 7 remainder 0
+7:2= 3 remainder 1
+3:2= 1 remainder 1
+1:2= 0 remainder 1 
+Binary = 1110000 
 
-73
+73:2= 36 remainder 1
+36:2= 18 remainder 0
+18:2= 9 remainder 0
+9:2= 4 remainder 1
+4:2= 2 remainder 0
+2:2= 1 remainder 0
+1:2= 0 remainder 1
+Binary = 1001001
 ~~~~
-
 
 ~~~~
 Translate the following binary numbers into decimal:
+
 Binary
 Decimal 
 1010 1010
