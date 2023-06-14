@@ -41,7 +41,16 @@ They are different IP adresses, same as above they are connected to different ne
 
 
 - Verander het privé IP adres van je mobiel naar dat van je laptop. Wat gebeurt er dan?
+
+After changing my phone's IP to that of my laptop, I still had internet,but it was verly slow, however on my router my phone was not visible anymore.
+And after changing it back, it was visible on the router and internetwas fast again. 
+
+![Phone_own_IP](/00_includes/Network_divices/Phone_own-IP.PNG) ![Phoane_IP_Chamged_to_laptop](/00_includes/Network_divices/Phone_IP_Changed_to_laptop.PNG)
+
 - Probeer het privé IP adres van je mobiel te veranderen naar een adres buiten je netwerk. Wat gebeurt er dan?
+
+If, on the other hand, I try to change the private IP address of my mobile phone to an address outside my network, my mobile phone will most likely not be able to connect to the network. The IP address is outside the range of the subnet of the local network. This can result in the inability to send or receive data over the network and the loss of internet connectivity on my mobile phone.
+
 
 ### Gebruikte bronnen
 
@@ -51,7 +60,7 @@ They are different IP adresses, same as above they are connected to different ne
 
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+I wasn't able to find my rivate IP adress straigt away and also was all new for me. But alot of searching and some help from my team mates, I managed to complete this assignment.
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+See screenshots and also I can confirm that I know how to check my router and the meaning of the Key terms above.
