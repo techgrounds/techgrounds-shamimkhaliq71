@@ -72,7 +72,12 @@ Introducing your own protocol involves a comprehensive process that requires car
 
 - Search for a protocol you know and try to understand how it functions. 
 
-IP protocol, the Internet protocol. is responsible for routing data by indicating where data packets come from and what their destination is. IP makes network-to-network communications possible. Hence, IP is considered a network layer (layer 3) protocol.
+The following protocols were captured:
+- TLSv1.2 (Transport Layer Security version 1.2). Uses for securing the connection with websites.
+- TCP(Transmssion Control Protocol) A connection-oriented protocol that provides reliable, orderly, and error-controlled delivery of data.
+- SSDP: (Simple Service Discovery Protocol) is a text-based protocol based on HTTPU, which uses UDP as the underlaying transport protocol. This is like a service that helps devices on a network find and communicate with each other.
+
+![Wireshark_capture](/00_includes/Network_divices/Wireshark_capture.PNG)
 
 
 ### Gebruikte bronnen
@@ -83,10 +88,11 @@ IP protocol, the Internet protocol. is responsible for routing data by indicatin
 [https://afteracademy.com/blog/what-are-protocols-and-what-are-the-key-elements-of-protocols/]  
 [http://www.steves-internet-guide.com/internet-protocol-suite-explained/]
 [https://www.cloudflare.com/learning/network-layer/what-is-a-protocol/]
+[https://www.youtube.com/watch?v=OU-A2EmVrKQ] [https://www.google.com/search?client=firefox-b-d&q=how+to+use+wireshark+to+understand+protocol#fpstate=ive&vld=cid:27ff7d5c,vid:lb1Dw0elw0Q]
 
 ### Ervaren problemen
 
-It was quit okay, not to tricky and clear cut language to me.
+It was quit okay, not to tricky and clear cut language to me. Understanding what the protocols are used for needed more attention.
 
 ### Resultaat
 

@@ -31,8 +31,7 @@ Dynamic IP adress: Dynamic means “constantly changing.” The prefix dyna- mea
 
 - Ontdek wat je publieke IP adres is van je laptop en mobiel op wifi. Zijn de adressen hetzelfde of niet? Leg uit waarom.
 
-IP addresses are not the same, because they are connected to different networks. 
-
+IP addresses are not the same, because they are connected to different networks. (see screenshot)
 
 - Ontdek wat je privé IP adres is van je laptop en mobiel op wifi. Zijn de adressen hetzelfde of niet? Leg uit waarom.
 They are different IP adresses, same as above they are connected to different networks.
@@ -43,13 +42,13 @@ They are different IP adresses, same as above they are connected to different ne
 - Verander het privé IP adres van je mobiel naar dat van je laptop. Wat gebeurt er dan?
 
 After changing my phone's IP to that of my laptop, I still had internet,but it was verly slow, however on my router my phone was not visible anymore.
-And after changing it back, it was visible on the router and internetwas fast again. 
+And after changing it back, it was visible on the router and internet was fast again. 
 
 ![Phone_own_IP](/00_includes/Network_divices/Phone_own-IP.PNG) ![Phoane_IP_Chamged_to_laptop](/00_includes/Network_divices/Phone_IP_Changed_to_laptop.PNG)
 
 - Probeer het privé IP adres van je mobiel te veranderen naar een adres buiten je netwerk. Wat gebeurt er dan?
 
-If, on the other hand, I try to change the private IP address of my mobile phone to an address outside my network, my mobile phone will most likely not be able to connect to the network. The IP address is outside the range of the subnet of the local network. This can result in the inability to send or receive data over the network and the loss of internet connectivity on my mobile phone.
+If, I try to change the private IP address of my mobile phone to an address outside my network, my mobile phone will most likely not be able to connect to the network. The IP address is outside the range of the subnet of the local network. This can result in the inability to send or receive data over the network and the loss of internet connectivity on my mobile phone.
 
 
 ### Gebruikte bronnen
