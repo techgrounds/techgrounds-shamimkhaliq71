@@ -26,11 +26,37 @@ To make all this readable for humans, we use CIDR notation.
 Maak een netwerkarchitectuur die voldoet aan de volgende eisen:
 
 1 private subnet dat alleen van binnen het LAN bereikbaar is. Dit subnet moet minimaal 15 hosts kunnen plaatsen.
+Om 15 hosts te kunnen plaatsen, moeten we op z'n minst 17 adressen hebben. [15 + 2(1 voor het netwerkadres zelf, en het laatste adres is gereserveerd voor het broadcastadres om berichten naar alle apparaten in het netwerk te sturen)
+
+Dit is het meest efficient door een /27 CIDR te gebruiken, deze geeft 32 adressen(32-27=5 vervolgens 2^5=32 mogelijke adressen)]
+
+Ik gebruik subnet 10.0.1.0/27.
+Deze heeft 32 mogelijke adressen:
+
+    10.0.1.0 - 10.0.1.31
+    Netwerkadres: 10.0.1.0
+    Broadcastadres: 10.0.1.31
+    Hosts: 10.0.1.1 - 10.0.1.30 
 
 
-1 private subnet dat internet toegang heeft via een NAT gateway. Dit subnet moet minimaal 30 hosts kunnen plaatsen (de 30 hosts is exclusief de NAT gateway).
+1 private subnet dat internet toegang heeft via een NAT gateway. Dit subnet moet minimaal 30 hosts kunnen plaatsen (de 30 hosts is exclusief de NAT gateway). Voor de gemak gebruik ik deze zelfde voorbeeld als hierboven. 10.0.1.0/27 en omdat deze 32 mogelijke adressen heeft en wij hebben voor deze opdracht 30 host adressen nodig. En de NAT gateway heeft geen eigen public IP adres nodig, want die zit in het public subnet.
+
+    10.0.1.0 - 10.0.1.31
+    Netwerkadres: 10.0.1.0
+    Broadcastadres: 10.0.1.31
+    Hosts: 10.0.1.1 - 10.0.1.30 
+    
 
 1 public subnet met een internet gateway. Dit subnet moet minimaal 5 hosts kunnen plaatsen (de 5 hosts is exclusief de internet gateway).
+
+Laten we de volgende subnet kiezen: 192.168.0.0/29. Deze levert 8 IP adressen. Wij hebben er 5 nodig.
+
+192.168.0 - 192.168.7
+Netwerk adres 192.168.0
+Broadcast adres 192.168.7
+Hosts: 192.168.1 - 192.168.6
+
+![](/)
 
 Plaats de architectuur die je hebt gemaakt inclusief een korte uitleg in de Github repository die je met de learning coach hebt gedeeld.
 
@@ -40,11 +66,11 @@ Plaats de architectuur die je hebt gemaakt inclusief een korte uitleg in de Gith
 [https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html]
 [https://www.youtube.com/watch?v=u7obme-h3bc]
 [https://www.youtube.com/watch?v=5WfiTHiU4x8&list=PLIhvC56v63IKrRHh3gvZZBAGvsvOhwrRF]
-
+[https://aws.amazon.com/what-is/cidr/#:~:text=Classless%20Inter%2DDomain%20Routing%20(CIDR,IP%20address%2C%20associated%20with%20it.]
 
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+I found this a very tricky assignment, really had to watch a lots of youtube videos several time to understand things better.
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+See results of calculations and screenshot
