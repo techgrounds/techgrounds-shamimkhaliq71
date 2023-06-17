@@ -45,7 +45,7 @@ The IP range options; range of IP addresses that are available for distribution 
 The leasetime of a IP address.
 
 ### Gebruikte bronnen
-[https://en.wikipedia.org/wiki/Networking_hardware] [http://192.168.178.1/index.html] [https://nordvpn.com/nl/blog/wat-is-dhcp/] {}
+[https://en.wikipedia.org/wiki/Networking_hardware] [http://192.168.178.1/index.html] [https://nordvpn.com/nl/blog/wat-is-dhcp/]
 
 
 ### Ervaren problemen
