@@ -44,8 +44,11 @@ Het OSI model in relatie tot deze netwerkapparaten
 The IP range options; range of IP addresses that are available for distribution to devices.
 The leasetime of a IP address.
 
+The OSI (Open Systems Interconnection) model provides a framework for understanding the functions and interactions of different network devices within a computer network. Each layer of the OSI model corresponds to specific tasks and responsibilities, and network devices operate at different layers to perform their functions. For example, routers operate at the Network layer (Layer 3) to route data between networks, switches operate at the Data Link layer (Layer 2) to facilitate communication within a local network, and firewalls operate at the Network or Transport layer (Layer 3 or Layer 4) to ensure network security. The OSI model helps in understanding how these network devices work together to enable reliable and efficient network communication, and it provides a common language and structure for designing and troubleshooting network architectures.
+
 ### Gebruikte bronnen
 [https://en.wikipedia.org/wiki/Networking_hardware] [http://192.168.178.1/index.html] [https://nordvpn.com/nl/blog/wat-is-dhcp/]
+[Chat GPT]
 
 
 ### Ervaren problemen
