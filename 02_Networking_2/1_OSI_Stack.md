@@ -37,7 +37,7 @@ The TCP/IP model and its uses.
 
 ### Ervaren problemen
 
-Geen problemen met reseach, misschien een beetje met het begrijpen van termen.
+No problem with the research itself, but understanding the models and their functionalities I needed more time for.
 
 ### Resultaat
 
@@ -45,6 +45,6 @@ I have learned the following: The OSI and TCP/IP models are both models that div
 
 Overlap:
 
-Both models have a clear overlap where the layers of the OSI model fit within multiple layers of the TCP/IP model.The OSI model and the TCP/IP model have layers that share similar functions and responsibilities. These layers in the OSI model align with multiple layers in the TCP/IP model. This relationship is shown visually in a diagram.
+Both models have a clear overlap, the OSI model and the TCP/IP model have layers that share similar functions and responsibilities. These layers in the OSI model align with multiple layers in the TCP/IP model. This relationship is shown visually in a diagram.
 
 ![OSI_vs_PCP_IP_Layers](/00_includes/NW_OSI/OSI_vs_TCP_IP_Layers.PNG)
