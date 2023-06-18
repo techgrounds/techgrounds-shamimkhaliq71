@@ -118,30 +118,40 @@ Binary: 0011 1010
 Translate the following decimal numbers into hexadecimal:
 Decimal
 Hex
-15
+15:16=0 remainder 15
+0:16=0 remainder 0
+Hex of 15 = F
 
-37
+37:16= 2 remainder 5
+2:16= 0 remainder 2 
+Hex of 37 = 25
 
-246
+246:16= 15 remainder 6
+6:16=0 remainder 6
+Hex of 246 = 5F6
 
-125
+125:16= 7 remainder 13
+7:16= 0 remainder 7
+Hex of 125 = 7D
 
-209
+209:16= 13 remainder 1
+13:16=0 remainder 13
+Hex of 209 = 1D
 ~~~~
 
 ~~~~
 Translate the following hexadecimal numbers into decimal:
 Hex
 Decimal
-88
+Hex 88 = (8 * 16^1) + (8 * 16^0) = (8 * 16) + (8 * 1) = 128 + 8 = 136 Decimal
 
-e0
+Hex e0 = (14 * 16^1) + (0 * 16^0) = (14 * 16) + (0 * 1) = 224 + 0 = 224 Decimal
 
-cb
+Hex cb = (12* 16^1) + (11 * 16^0) = (12 * 16) + (11 * 1) = 192 + 11 = 203 Decimal
 
-2f
+Hex 2f = (2 * 16^1) + (15 * 16^0) = (2 * 16) + (15 * 1) = 32 + 15 = 47 Decimal
 
-d8
+Hex d8 = (13 * 16^1) + (8 * 16^0) = (13 * 16) + (8 * 1) = 208 + 8 = 216 Decimal
 ~~~~
 
 
@@ -152,7 +162,7 @@ d8
 
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+I didn't know how to calculate, Binary to Decimals or Decimals to Hex or the otherway around. I was finding it very difficult, but after reading the explaination and a lot of practice. I am now able to calculate it all.
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+See calculation results and steps taken to reach to end results.
