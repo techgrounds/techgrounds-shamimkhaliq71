@@ -8,11 +8,16 @@ Protocols in higher layers, like HTTPS and SSH, all have their own use cases. Mo
 
 ## Key-terms
 
-- HTTP (hypertext transfer protocol) -This is the workhorse of the Web.
-- 4 Layer protocol 
+- HTTP (hypertext transfer protocol) -This is the workhorse of the Web. HTTP is a fundamental protocol that enables the exchange of data between clients and servers on the web. It plays a crucial role in facilitating web browsing, content delivery, and various web-based applications.
+
+- 4 Layer protocol: The term "4-layer protocol" typically refers to a networking model that divides the communication process into four distinct layers. Most commenly used is model TCP.
+
 - TCP (Transmission control protocol) is a connection orientated protocol and is used to provide a reliable end to end connection.
-- UDP (used datagram protocol) is a connection less protocol and doesn't guarantee delivery.
-- Wireshark ia a network protocol analyser.
+
+- UDP (User Datagram Protocol) is a connectionless transport protocol that operates in the transport layer of the TCP/IP model. It is an alternative to the more reliable but connection-oriented TCP (Transmission Control Protocol). UDP offers a simpler and more lightweight approach to data transmission. It provides a best-effort delivery mechanism without establishing a connection between the sender and receiver, therefore less reliable.
+
+- Wireshark is a widely used network protocol analyzer or packet sniffer tool. It allows users to capture, analyze, and inspect network traffic in real-time. With Wireshark, you can monitor and capture packets flowing over a network interface, providing you with detailed information about the data being transmitted.
+Wireshark supports various protocols and can decode and display their corresponding packet contents.
 
 ## Opdracht
 
