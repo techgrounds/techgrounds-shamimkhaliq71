@@ -111,6 +111,7 @@ Overall, this network setup prioritizes network security by placing critical com
 
 [https://app.diagrams.net/]
 [Chatgpt]
+[https://www.google.com/search?client=firefox-b-d&q=how+to+use+diagrams.net]
 
 
 ### Ervaren problemen
