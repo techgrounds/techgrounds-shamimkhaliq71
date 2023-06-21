@@ -15,7 +15,7 @@ In this assignment you will learn about the basics of cryptography, starting wit
 
 - Asymmetric encryption: uses two keys for encryption and decryption. A public key, which is shared among users, encrypts the data. A private key, which is not shared, decrypts the data. 
 
-- Symmetric: encryption uses a single password to encrypt and decrypt data.
+- Symmetric encryption: uses a single password to encrypt and decrypt data.
 
 - Key:  it locks (encrypts) data so that only someone with the right key can unlock (decrypt) it. It tells you how to arrange the Cipher rules.
 
@@ -26,11 +26,12 @@ A ciphir is a set of rules you are using to encode the information.
 
 ## Opdracht
 
-Needed the Slack channel your share with your entire cohort.
-A peer to check the outcome of the assignment with.
+Requirments to do this assignment:
+The Slack channel you share with your entire cohort.
+A peer to send the message too via the public Slack channel.
 
 
-- Find one more historic cipher besides the Caesar cipher.
+1. Find one more historic cipher besides the Caesar cipher.
 
 One historic cipher besides the Caesar cipher is the Vigenère cipher. The Vigenère cipher was invented by Blaise de Vigenère in the 16th century and is a polyalphabetic substitution cipher. It is an improvement over the Caesar cipher as it uses a keyword to determine the shift value for each letter in the plaintext.
 
@@ -40,10 +41,7 @@ To decrypt the Vigenère cipher, the recipient must know the keyword used by the
 
 The Vigenère cipher was considered unbreakable for several centuries and was widely used for secure communication. However, with the advancement of modern cryptography techniques, the Vigenère cipher can be cracked using statistical analysis and frequency analysis methods. Nonetheless, it holds historical significance as an important step in the development of cryptographic systems.
 
-
-
-
-- Find two digital ciphers that are being used today.
+2. Find two digital ciphers that are being used today.
 
 Two digital ciphers that are widely used today are:
 
@@ -53,12 +51,22 @@ Two digital ciphers that are widely used today are:
 
 Both AES and RSA are widely used and trusted ciphers in modern cryptography, offering strong security and playing essential roles in ensuring the confidentiality, integrity, and authenticity of digital data.
 
+3. Send a symmetrically encrypted message to one of your peers via the public Slack channel. They should be able to decrypt the message using a key you share with them. Try to think of a way to share this encryption key without revealing it to everyone. You are not allowed to use any private messages or other communication channels besides the public Slack channel. 
 
-- Send a symmetrically encrypted message to one of your peers via the public Slack channel. They should be able to decrypt the message using a key you share with them. Try to think of a way to share this encryption key without revealing it to everyone. You are not allowed to use any private messages or other communication channels besides the public Slack channel. 
+- To perform this task we will be using the Advanced Encryption Standard (AES), because this is a symmetric encryption algorithm. Keep in mind that Symmetric encryption uses a single password to encrypt and decrypt data.
+- To understand the way AES works, you first need to learn how it transmits information between multiple steps. Since a single block is 16 bytes, a 4x4 matrix holds the data in a single block, with each cell holding a single byte of information.
+
+![AES_block_16bytes](/00_includes/Security/Sec_4/AES_block_16bytes.jpg)
+
+The matrix shown in the image above is known as a state array. Similarly, the key being used initially is expanded into (n+1) keys, with n being the number of rounds to be followed in the encryption process. So for a 128-bit key, the number of rounds is 16, with no. of keys to be generated being 10+1, which is a total of 11 keys.
+However, to make life easy there are online AES generaters, which we will use.
+The AES engine requires a plain-text and a secret key for encryption and same secret key is used again to decrypt it.
 
 
 
 - Analyse the shortcomings of symmetric encryption for sending messages.
+
+
 
 
 ### Gebruikte bronnen
@@ -67,12 +75,14 @@ Both AES and RSA are widely used and trusted ciphers in modern cryptography, off
 [https://www.hypr.com/security-encyclopedia/cipher]
 [Chatgpt]
 [https://www.simplilearn.com/tutorials/cryptography-tutorial/symmetric-encryption]
-
-
+[https://www.simplilearn.com/tutorials/cryptography-tutorial/aes-encryption]
+[https://www.javainuse.com/aesgenerator]
 
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+
+I found this assignment tricky and hard to understand. It was difficultto create a symmetric encryption, yet very simple using an online AES generator and I thought I had to do it all by myself doing calculations. 
+At the end understood that online generators are easy to use, but my luck none of them would work for me.
 
 ### Resultaat
 [Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
