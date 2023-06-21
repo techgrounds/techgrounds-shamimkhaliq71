@@ -60,10 +60,11 @@ web_port: 58007
 ![Webpage_linked_apache2](/00_includes/Sec_2/Webpage_linked_apache2.jpg)
 
 - Configure the firewall to block web traffic, but allow ssh traffic.
+
 We are using Ubunto, so therefor the firewall deamon ufw will be used. I made sure to check whether the firewall was active using the following command: ufw status. It showed inactive
 and followed by the next command: sudo ufw enable
 and proceded with:  sudo default deny incoming
-This blocked all incomingtraffice. However I had to allow SSH, so the next command was put in place:
+This blocked all incoming traffic. However, I had to allow SSH, so the next command was put in place:
 sudo ufw allow OpenSSH and check status with 
 sudo ufw status.
 
@@ -87,7 +88,7 @@ To check this I try to reload the Apache default page and it showed the followin
 
 ### Ervaren problemen
 
-I didn't know the to answer this we needed [ipnummer]:[web_port] provided by Techground in nested_list. But once Kaman pointed me in the right direction and I used instructions on different websites, I was able to complete the assignement without any further issues.
+I didn't know the to answer this question we needed [ipnummer]:[web_port] provided by Techground in nested_list. But once Kaman pointed me in the right direction and I used instructions on different websites, I was able to complete the assignement without any further issues.
 
 
 ### Resultaat
