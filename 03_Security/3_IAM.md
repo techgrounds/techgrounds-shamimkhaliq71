@@ -58,7 +58,8 @@ Overall, the principle of least privilege promotes the concept of providing acce
 [Chatgpt]
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+
+Was very straight forward, just needed to understand the key terms.
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+See screenshot and answers to the questions. And the fact that I have a much better understanding of, Authentication, Authorization  and MFA.
