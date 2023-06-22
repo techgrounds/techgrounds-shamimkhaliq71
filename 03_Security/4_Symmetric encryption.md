@@ -60,13 +60,20 @@ Both AES and RSA are widely used and trusted ciphers in modern cryptography, off
 
 The matrix shown in the image above is known as a state array. Similarly, the key being used initially is expanded into (n+1) keys, with n being the number of rounds to be followed in the encryption process. So for a 128-bit key, the number of rounds is 16, with no. of keys to be generated being 10+1, which is a total of 11 keys.
 However, to make life easy there are online AES generaters, which we will use.
-The AES engine requires a plain-text and a secret key for encryption and same secret key is used again to decrypt it.
+The AES engine requires a plain-text and a secret key for encryption and same secret key is used again to decrypt it. For the key we will use 128 bits or 16 characters. In this case the key was: security12345678 
 
+![Encrypted msg_plain txt](/00_includes/Security/Sec_4/Encrypted%20msg_plain%20txt.jpg)
+
+![Encrypted msg_key](/00_includes/Security/Sec_4/Encrypted%20msg_key.jpg)
+
+![Decrypted msg](/00_includes/Security/Sec_4/Decrypted%20msg.jpg)
 
 
 - Analyse the shortcomings of symmetric encryption for sending messages.
 
-
+I was able to generate an encrypted message, but unfortunatly I couldn't send it via public Slack channel without everyone else seeing the key too.
+I also red that one can hide the key in an image, but I wasn't able to create that. So, need to learn about that in the future.
+Furthermore, not all tools work properly.
 
 
 ### Gebruikte bronnen
@@ -81,8 +88,8 @@ The AES engine requires a plain-text and a secret key for encryption and same se
 
 ### Ervaren problemen
 
-I found this assignment tricky and hard to understand. It was difficultto create a symmetric encryption, yet very simple using an online AES generator and I thought I had to do it all by myself doing calculations. 
-At the end understood that online generators are easy to use, but my luck none of them would work for me.
+I found this assignment tricky and hard to understand. It was difficult to create a symmetric encryption, yet very simple using an online AES generator. I thought I had to do it all by myself doing calculations. 
+At the end understood that online generators are easy to use, but my luck none of them would work for me at that time of night. I tried javainuse.com again in the morning and it worked.
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+See screenshots, but was not able to send it secretly to just one peer via public Slack channal.
