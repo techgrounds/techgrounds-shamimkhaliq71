@@ -4,7 +4,7 @@ Public Key Infrastructure (PKI) is a framework that enables secure communication
 It consists of three entities that assure you can communicate securely over an insecure network like the public internet. 
 Public key infrastructure uses asymmetric encryption methods to ensure that messages remain private and also to authenticate the device or user sending the transmission. Asymmetric encryption involves the use of a public and private key.
 The core of a public key infrastructure is trust. It is important for a recipient entity to know without a doubt that the sender of the digital certificate is exactly who they claim to be. 
-rusted third-party CAs can vouch for the sender and help to prove that they are indeed who they say they are. Digital certificates are used to verify digital identities. 
+Trusted third-party CAs can vouch for the sender and help to prove that they are indeed who they say they are. Digital certificates are used to verify digital identities. 
 
 Digital certificates are also called PKI certificates or X.509 certificates. A PKI certificate offers proof of identity to a requesting entity, which is verified by a third party and works like a digital passport or driver’s license. 
 X.509 is the standard which defines the process in which a PKI should function. There are many ways of implementing a PKI, not all of them comply with the X.509 standard.
