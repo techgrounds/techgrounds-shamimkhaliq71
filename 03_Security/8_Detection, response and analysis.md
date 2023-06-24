@@ -36,6 +36,8 @@ For these strategies it is always important to keep track of the following metri
 
 - Automatic failover: a resource that allows a system administrator to automatically switch data handling to a standby system in the event of system compromise.
 
+- Hacking: Hacking in cyber security refers to the misuse of devices like computers, smartphones, tablets, and networks to cause damage to or corrupt systems, gather information on users, steal data and documents, or disrupt data-related activity.
+
 ## Opdracht
 
 Study the following:
@@ -44,20 +46,38 @@ Study the following:
 - The concept of systems hardening.
 - Different types of disaster recovery options.
 
-1. A Company makes daily backups of their database. The database is automatically recovered when a failure happens using the most recent available backup. The recovery happens on a different physical machine than the original database, and the entire process takes about 15 minutes. What is the RPO of the database?
-An automatic failover to a backup web server has been configured for a website. Because the backup has to be powered on first and has to pull the newest version of the website from GitHub, the process takes about 8 minutes. What is the RTO of the website?
+1. A Company makes daily backups of their database. The database is automatically recovered when a failure happens using the most recent available backup. The recovery happens on a different physical machine than the original database, and the entire process takes about 15 minutes. 
 
+- What is the RPO of the database?
+
+- A RPO (Recovery Point Objective) measures how much data in an IT system can be lost due to a disaster before it affects the business. It is usually measured in hours or days and determines the maximum time you are willing to accept between data backups.
+In this case, since the company makes daily backups of their database, the RPO would be equal to the time between the most recent available backup and the occurrence of the failure. 
+Given that the entire process of recovering the database on a different physical machine takes about 15 minutes, it means that the RPO would be approximately 15 minutes. This implies that the company can tolerate a maximum data loss of up to 15 minutes worth of data. Any data changes or updates made within the 15-minute interval before the failure would not be included in the recovered database.
+
+
+2. An automatic failover to a backup web server has been configured for a website. Because the backup has to be powered on first and has to pull the newest version of the website from GitHub, the process takes about 8 minutes. 
+
+- What is the RTO of the website?
+
+RTO (Recovery Time Objective) is an essential metric that will help you calculate the time it takes to restore your system or application after a downtime period with minimal disruption to business operations. Essentially, it's the amount of downtime your company can comfortably handle.
+
+Given that the process of powering on the backup server and pulling the newest version of the website from GitHub takes about 8 minutes, the RTO of the website would be approximately 8 minutes. This means that the company aims to have the website fully functional and accessible within 8 minutes after the failure occurs, ensuring minimal downtime and service disruption for users.
 
 
 ### Gebruikte bronnen
 
-[What is an RPO and RTO? and why you NEED to understand them as a Solutions Architect]
-
+[https://ubuntu.com/blog/what-is-system-hardening-definition-and-best-practices]
+[https://www.google.com/search?q=What+is+an+RPO+and+RTO%3F+and+why+you+NEED+to+understand+them+as+a+Solutions+Architect&rlz=1C1YTUH_nlNL998NL998&oq=What+is+an+RPO+and+RTO%3F+and+why+you+NEED+to+understand+them+as+a+Solutions+Architect&aqs=chrome..69i57.934j0j7&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:2b5d3dc2,vid:KesoHnsZWoA]
+[https://www.veritas.com/information-center/data-backup-and-recovery]
+[https://www.veritas.com/information-center/rpo]
+[https://www.veritas.com/information-center/rto]
 
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+
+None, just a matter of reading a lot and understanding the concepts.
 
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+
+I understand that these scenarios highlight the importance of establishing specific RPO and RTO objectives as part of a business continuity plan. These objectives ensure that data loss and downtime are minimized, allowing the organization to quickly recover from failures or disruptions and resume normal operations.
