@@ -108,8 +108,6 @@ By leveraging these options, you can closely monitor and analyze your Azure expe
 [https://www.youtube.com/watch?v=mQYR7icumaU]
 
 
-
-
 ### Ervaren problemen
 
 I had to change my password and that didn't go well, so had to request help from my learning coach to reset my password.
