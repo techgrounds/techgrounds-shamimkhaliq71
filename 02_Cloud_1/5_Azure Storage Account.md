@@ -31,7 +31,7 @@ Azure Storage Explore
 Task 1:
 Create an Azure Storage Account. Ensure that only you have access to the data.
 
-![azureblobstorage_05](/00_includes/Cloud/Opdracht%205/azureblobstorage_05.jpg)
+![AZ05_Storage account_funnypics](/00_includes/Cloud/Opdracht%205/AZ05_Storage%20account_funnypics.jpg)
 
 Upload data to a storage service of your choice via the console (e.g., a cat photo in Blob storage).
 
@@ -39,14 +39,23 @@ Upload data to a storage service of your choice via the console (e.g., a cat pho
 
 Retrieve the data to your own computer using Azure Storage Explorer. 
 
+![download to laptop](/00_includes/Cloud/Opdracht%205/download%20to%20laptop.jpg)
+
 ![pic_uploaded_cloudcontainer](/00_includes/Cloud/Opdracht%205/pic_uploaded_cloudcontainer.jpg)
 
 Task 2:
 Create a new container.
 Upload the 4 files that make up the AWS Demo Website.
+
+![aws docs uploaded](/00_includes/Cloud/Opdracht%205/aws%20docs%20uploaded.jpg)
+
 Enable Static Website Hosting.
+
 Share the URL with a teammate. Ensure that they can view the website.
 
+![static web and url](/00_includes/Cloud/Opdracht%205/static%20web%20and%20url.jpg)
+
+![link works](/00_includes/Cloud/Opdracht%205/link%20works.jpg)
 
 
 ### Gebruikte bronnen
@@ -61,9 +70,11 @@ Share the URL with a teammate. Ensure that they can view the website.
 
 After completing part 1, my created storage, container and picture disapeared, I thought I deleted it by accident, so I did it all over again but it happend for the second time. My peers helped me and I managed to restore it, but dont understand why it was getting deleted while I was still working on it. Mayby the learning coach set some settings in place.
 
-Task 2: I didn't have 
+Task 2: didn't know how to upload the 4 files and asked help from Jordan.
 
 
 ### Resultaat
 
-See screenshots and I gained knowledge of creating storage accounts, adding containers and pictures.
+See screenshots.
+I gained knowledge of creating storage accounts, adding containers and pictures.
+And how to Enable Static Website Hosting.
