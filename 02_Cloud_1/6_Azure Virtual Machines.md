@@ -25,7 +25,7 @@ Needed: Azure-cloud environment
 
 Log in bij je Azure Console.
 
-Maak een VM met de volgende vereisten:
+Create a VM with the following requirements:
 - Ubuntu Server 20.04 LTS - Gen1
 - Size: Standard_B1ls
 
@@ -35,28 +35,29 @@ Allowed inbound ports:
 
 OS Disk type: Standard SSD
 Networking: defaults
-Boot diagnostics zijn niet nodig
+Boot diagnostics are not neccesary
+
+Custom data: (When creating the VM fill the follwing in the Custom data square)
+
+- #!/bin/bash
+- sudo su
+- apt update
+- apt install apache2 -y
+- ufw allow 'Apache'
+- systemctl enable apache2
+- systemctl restart apache2
 
 ![VM created](/00_includes/Cloud/Opdracht%206/VM%20created.jpg)
 
 ![Created VM_Key](/00_includes/Cloud/Opdracht%206/Created%20VM_Key.jpg)
 
-Custom data: 
+Check if the server is working:
 
-#!/bin/bash
-sudo su
-apt update
-apt install apache2 -y
-ufw allow 'Apache'
-systemctl enable apache2
-systemctl restart apache2
+After putting in all the above commands in the Custom data box and create the VM, you can go ahead and copy/paste the IP adress in the browser bar and check if the server works.
 
+![server werkt](/00_includes/Cloud/Opdracht%206/server%20werkt.jpg)
 
-
-Controleer of je server werkt.
-
-Let op! Vergeet na de opdracht eerst screenshots te maken en daarna niet alles weer weg te gooien. Je kan elk onderdeel individueel verwijderen, of je kan in 1 keer de resource group verwijderen.
-
+Let op! Vergeet niet na de opdracht eerst screenshots te maken en daarna alles weer weg te gooien. Je kan elk onderdeel individueel verwijderen, of je kan in 1 keer de resource group verwijderen.
 
 ### Gebruikte bronnen
 
