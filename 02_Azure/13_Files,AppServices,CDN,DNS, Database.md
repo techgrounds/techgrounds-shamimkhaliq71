@@ -10,7 +10,7 @@ Onderwerpen die je onder de kop “Bestudeer” vindt verwachten wij dat je alle
 - CDN
 - DNS
 - Files
-- Database
+- Databases: Azure SQL, PostgreSQL, MYSQL en MariaDB; daarnaast is er CosmosDB, wat een NoSQL database is.
 
 ## Opdracht
 
@@ -72,25 +72,64 @@ Opdracht deel 2: Azure Files en Database:
 2. Hoe zet ik deze dienst aan?
 3. Hoe kan ik deze dienst koppelen aan andere resources?
 
+Azure Fileshare:
 1. Waar kan ik deze dienst vinden in de console?
-Azure Files volledig beheerde bestandsshares in de cloud die toegankelijk zijn via het industriestandaard SMB-protocol (Server Message Block) en het NFS-protocol (Network File System)
+- Azure Files volledig beheerde bestandsshares in de cloud die toegankelijk zijn via het industriestandaard SMB-protocol (Server Message Block) en het NFS-protocol (Network File System)
 Azure Files is te vinden in de Azure-portal onder de sectie "Opslagaccounts".
 
 2. Hoe zet ik deze dienst aan?
-Om Azure Files in te schakelen, moet je een opslagaccount maken. Ga naar de sectie "Opslagaccounts" in de Azure-portal, klik op "Nieuw opslagaccount" en volg de stappen om het account te maken. Vervolgens selecteer je
+- Om Azure Files in te schakelen, moet je een opslagaccount maken. 
+Stap 1 >>>Ga naar de sectie "Opslagaccounts" in de Azure-portal, klik op "Nieuw opslagaccount" en volg de stappen om het account te maken. 
+
+![Created storage](/00_includes/Cloud/Opdracht%2013/Created%20storage.jpg)
+
+Stap 2>>>>Vervolgens selecteer je
 - File shares and create File share en geef het een naam en selecteer create.
 
-3. Hoe kan ik deze dienst koppelen aan andere resources?
-Nadat je het opslagaccount hebt gemaakt en Azure Files hebt ingeschakeld, kun je het koppelen aan andere resources in Azure. Bijvoorbeeld, je kunt Azure Files koppelen aan virtuele machines om gedeelde bestandsopslag voor meerdere VM's te bieden. Dit kan worden gedaan tijdens het maken van een nieuwe VM of door een bestaande VM te bewerken. Je kunt ook Azure Files gebruiken als een gedeelde opslaglocatie voor Azure App Services of Azure Functions. Door Azure Files te koppelen aan andere resources, kunnen verschillende services binnen Azure samenwerken en gegevens delen, wat flexibiliteit en efficiëntie biedt in je infrastructuur.
+![Fileshare](/00_includes/Cloud/Opdracht%2013/Fileshare.jpg)
 
+3. Hoe kan ik deze dienst koppelen aan andere resources?
+- Nadat je het opslagaccount hebt gemaakt en Azure Files hebt ingeschakeld, kun je het koppelen aan andere resources in Azure. Bijvoorbeeld, je kunt Azure Files koppelen aan virtuele machines om gedeelde bestandsopslag voor meerdere VM's te bieden. Dit kan worden gedaan tijdens het maken van een nieuwe VM of door een bestaande VM te bewerken. Je kunt ook Azure Files gebruiken als een gedeelde opslaglocatie voor Azure App Services of Azure Functions. Door Azure Files te koppelen aan andere resources, kunnen verschillende services binnen Azure samenwerken en gegevens delen, wat flexibiliteit en efficiëntie biedt in je infrastructuur.
+
+Stap 3>>> voeg een map toe om je bestanden te uploaden
+
+Op de pagina Fileshare ga naar je nieuw aangemaakte File en klik op "+ Add Directory" geef het een naam, in dit geval "shamim-main".
+
+Hier kunnen we bestanden uploaden naar deze map door op "Uploaden" te klikken en de bestanden te selecteren die we willen uploaden vanaf onze lokale machine.
+
+![Add Directory](/00_includes/Cloud/Opdracht%2013/Add%20Directory.jpg)
+
+Ik heb een Fileshare gemaakt in het Storage Account en deze succesvol gekoppeld aan Windows.
+
+Azure storage explorer:
+
+![Uploaded image](/00_includes/Cloud/Opdracht%2013/Uploaded%20image.jpg)
+
+
+Azure Database:
 1. Waar kan ik deze dienst vinden in de console?
-Azure Database is te vinden in de Azure-portal onder de sectie "Databases".
+- Azure Database is te vinden in de Azure-portal onder de sectie "Databases". Hier kun je verschillende typen databaseservices vinden, zoals Azure SQL Database, Cosmos DB en MySQL-databases.
 
 2. Hoe zet ik deze dienst aan?
-Om Azure Database in te schakelen, moet je een database maken binnen de gewenste database-engine, zoals Azure SQL Database of Azure Database for MySQL. Ga naar de sectie "Databases" in de Azure-portal, klik op "Nieuwe database" en volg de stappen om de database te maken. Tijdens het creatieproces kun je de gewenste instellingen en configuraties specificeren.
+- Om Azure Database in te schakelen, moet je een database maken binnen de gewenste database-engine, zoals Azure SQL Database of Azure Database for MySQL. 
+
+Stap 1>>>Ga naar de sectie "Databases" in de Azure-portal, klik op "Nieuwe database" en volg de stappen om de database te maken. Tijdens het creatieproces kun je de gewenste instellingen en configuraties specificeren.
+
+Om een Azure SQL database aan te maken is het nodig om een Server aan te maken.
+
+![Create server](/00_includes/Cloud/Opdracht%2013/Create%20server.jpg)
+
+Een lege SQL server is aangemaakt, nu kan er een Azure SQL database worden aangemaakt. 
+
+Stap 2>>>Go to resource en click op server naam. Vervolgens selecteer je "create database" 
+
+![Create database](/00_includes/Cloud/Opdracht%2013/Create%20database.jpg)
+
+![Database ready](/00_includes/Cloud/Opdracht%2013/Database%20ready.jpg)
+
 
 3. Hoe kan ik deze dienst koppelen aan andere resources?
-Nadat je de database hebt gemaakt, kun je deze koppelen aan andere resources in Azure. Bijvoorbeeld, je kunt Azure Database koppelen aan een virtuele machine waarop je applicatie draait, zodat de applicatie toegang heeft tot de database. Dit kan worden gedaan door de verbindingsinformatie van de database te gebruiken in de applicatieconfiguratie. Je kunt ook Azure Database koppelen aan andere Azure-services, zoals Azure App Services of Azure Functions, om gegevensopslag en verwerking mogelijk te maken. Door Azure Database te koppelen aan andere resources, kunnen verschillende services binnen Azure samenwerken en gegevens delen, waardoor je een complete end-to-endoplossing kunt bouwen.
+- Nadat je de database hebt gemaakt, kun je deze koppelen aan andere resources in Azure. Bijvoorbeeld, je kunt Azure Database koppelen aan een virtuele machine waarop je applicatie draait, zodat de applicatie toegang heeft tot de database. Dit kan worden gedaan door de verbindingsinformatie van de database te gebruiken in de applicatieconfiguratie. Je kunt ook Azure Database koppelen aan andere Azure-services, zoals Azure App Services of Azure Functions, om gegevensopslag en verwerking mogelijk te maken. Door Azure Database te koppelen aan andere resources, kunnen verschillende services binnen Azure samenwerken en gegevens delen, waardoor je een complete end-to-endoplossing kunt bouwen.
 
 
 ### Gebruikte bronnen
@@ -101,7 +140,7 @@ Nadat je de database hebt gemaakt, kun je deze koppelen aan andere resources in 
 
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+Niet echt, gewoon alles goed doorlezen en de stappen 1 voor 1 volgen.
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+Zie screenshots
