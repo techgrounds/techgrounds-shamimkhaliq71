@@ -11,7 +11,19 @@ Waar wordt X voor gebruikt?
 Zoals je kan zien is dit lijstje stukken korter dan wat wij hiervoor hebben behandeld.
 
 ## Key-terms
-[Schrijf hier een lijst met belangrijke termen met eventueel een korte uitleg.]
+
+Containers			
+Azure Support Plans				
+Azure Advisor				
+Azure App Configuration		
+Azure Activity Log	
+Azure Active Directory		
+Azure Monitor
+CosmosDB 					
+Azure Functions 			
+Event Grid
+Queue Storage
+Service Bus 	
 
 ## Opdracht
 
@@ -172,6 +184,9 @@ Klik op "Create" (Maken) om de Service Bus-namespace te maken.
 [https://www.netflow.be/blog/wat-is-active-directory/]
 [https://learn.microsoft.com/en-us/azure/cosmos-db/introduction]
 [https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-function-app-portal?wt.md_id=searchAPI_azureportal_inproduct_rmskilling&sessionId=d5e39e08528e44a9bc1329ee95d6fcb7]
+[https://www.youtube.com/watch?v=TujzkSxJzIA]
+[https://www.youtube.com/watch?v=JQ6KhjU5Zsg]
+
 
 ### Ervaren problemen
 Het is heelveel tekst en uitleg. Om alle termen/services goed te begrijpen en wat je ermee kan doen, had ik wel wat tijd nodig. Maar goed overleg met peers hielp enorm.
