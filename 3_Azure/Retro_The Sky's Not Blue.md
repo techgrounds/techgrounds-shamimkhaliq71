@@ -9,9 +9,9 @@ Achteraf: Plaats een kopie van de retro in je eigen repository.
  We hadden afgesproken om van 10 tot 11 uur en in de middag van 14 tot 15 uur golden hour in te lassen om effiecienter en meer gefocussed te kunnen werken. 
  Van 11 tot 12 uur en van 15 tot 16 uur vragen en elkaar helpen. Delen van tips en tops.
 
- We hadden de Feynman technique toegapast en dat werkete heel goed, dus ook andre groepen voorgesteld en feedback was super goed.
+ We hadden de Feynman technique toegapast en dat werkete heel goed, dus ook aan andere groepen voorgesteld en feedback was super goed.
 
- Jordan en Jeroen moesten een softskills presentaties doen en ook om beterte worden met het presenteren van topics, hebben we geoefend en beide heren hebben een hele mooie presentatie geleverd. Oefening baart kunst en om die reden hadden we in week 6 de Cloud Magicians groep uitgenodigd om bij ons hun presentaties te doen en hun kennis te delen met ons.
+ Jordan en Jeroen moesten een softskills presentaties doen en ook om beter te worden met het presenteren van topics, hebben we geoefend en beide heren hebben een hele mooie presentatie geleverd. Oefening baart kunst en om die reden hadden we in week 6 de Cloud Magicians groep uitgenodigd om bij ons hun presentaties te doen en hun kennis te delen met ons.
 
  Overall, een leuke groep, goede samenwerking.
 
