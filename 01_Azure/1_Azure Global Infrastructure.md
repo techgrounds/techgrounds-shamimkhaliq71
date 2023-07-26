@@ -1,13 +1,13 @@
 # Azure Global Infrastructure
 
-Alles in de cloud, van servers tot networking, is virtualized. Als klant van een cloud provider hoef je je geen zorgen te maken over de onderliggende fysieke infrastructuur. De fysieke locatie van je applicatie of data kan echter wel belangrijk zijn.
+Everything in the cloud, from servers to networking, is virtualized. As a customer of a cloud provider, you don't need to worry about the underlying physical infrastructure. However, the physical location of your application or data can be important.
 
-De global infrastructure van Azure bestaat uit de volgende componenten:
+The global infrastructure of Azure consists of the following components:
 Regions
 Availability Zones
 Region Pairs
 
-Je hebt zelf controle over welke regio je gebruikt, maar niet elke service is beschikbaar in elke regio. Sommige services zijn ook niet gebonden aan een specifieke regio. Denk hierbij bijvoorbeeld aan Azure Subscriptions. Voor andere diensten als Azure Virtual Machines kan je juist een specifiek datacenter kiezen.
+You have control over which region you use, but not every service is available in every region. Some services are not tied to a specific region. For example, Azure Subscriptions are not region-specific. On the other hand, for services like Azure Virtual Machines, you can choose a specific data center.
 
 
 ## Key-terms
@@ -18,8 +18,6 @@ Azure geography
 Azure Region
 Azure Availability Zone
 Azure Region Pair
-
-
 
 ## Opdracht
 
@@ -37,7 +35,7 @@ Why are geographies important:
 
 1. Nearby geographies are important, because you want application and data to be hosted as geographically close to your customer base as possible. Far away geographies could cause unneccesary latency, delay and poor performance. 
 
-2. Another resaon is Compliance with regulations:
+2. Another reason is Compliance with regulations:
 Regulated data like finance, health care and credit card data for example may not be allowed to leave the country. Legally, your organization is required to store such data in the same country were the operations are being carried out.
 
 - What is an Azure Region?

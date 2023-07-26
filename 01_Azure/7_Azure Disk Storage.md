@@ -37,7 +37,6 @@ First I created a shared disk:
 After that I connected the shared disk with both VMs.
 
 
-
 3. On your first machine, create a file and place it on the Shared Disk.
 4. Check on the second machine if you can read the file.
 5. Take a snapshot of the disk and try creating a new Disk from it.
