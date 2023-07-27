@@ -31,7 +31,7 @@ Azure documentation
 
 Study:
 
-1. he Azure principles for cost management:
+1. The Azure principles for cost management:
 
 - Planning: Proactively plan your resource usage to optimize costs.
 - Visibility: Gain visibility into your spending through Azure's cost management tools.
@@ -94,8 +94,6 @@ Azure Cost Management + Billing APIs: Azure provides APIs that allow programmati
 Cost analysis: Azure provides a detailed cost analysis feature that allows you to explore your spending by different dimensions such as resource types, regions, tags, or time periods. This helps you identify cost drivers, optimize resource usage, and make informed decisions about cost optimization.
 
 Azure Advisor: Azure Advisor is a service that provides recommendations to optimize your Azure resources for performance, security, and cost. It offers specific cost-related recommendations, such as resizing or shutting down underutilized resources, selecting cost-effective VM sizes, or leveraging reserved instances for long-term cost savings.
-
-Azure Cost Management + Billing APIs: Azure provides APIs that allow programmatic access to cost and usage data. You can integrate these APIs into your own applications or scripts to automate cost management tasks, retrieve billing data, and perform custom analysis.
 
 By leveraging these options, you can closely monitor and analyze your Azure expenses, identify areas of potential cost optimization, and make data-driven decisions to optimize your cloud spending.
 
