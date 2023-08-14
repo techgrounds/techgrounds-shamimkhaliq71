@@ -10,20 +10,22 @@ Everyone will use the same version of Python, and the same IDE. This way, it wil
 
 
 ## Key-terms
-[Schrijf hier een lijst met belangrijke termen met eventueel een korte uitleg.]
+Python:
+Python is a cross-platform programming language, which means that it can run on multiple platforms like Windows, macOS, Linux, and has even been ported to the Java and .NET virtual machines. It is free and open-source.
+
+VS Code
 
 ## Opdracht
 
-Install the latest version of Python from https://www.python.org/
+1. Install the latest version of Python from https://www.python.org/
 
-Install VS Code from https://code.visualstudio.com/download
+2. Install VS Code from https://code.visualstudio.com/download
 
-Install the Python plug-in in VS Code.
+3. Install the Python plug-in in VS Code.
 
-Write the following Python code. 
+4. Write the following Python code. 
 
 The output in the terminal should be the text “Hello world!”
-
 
 ### Gebruikte bronnen
 [https://www.python.org/]
@@ -31,7 +33,7 @@ The output in the terminal should be the text “Hello world!”
 
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+No problems experienced during installation, due to prior introdution to Python and VS code during Pathways.
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+[Hello world](/00_includes/Python/Hello%20world.jpg)
