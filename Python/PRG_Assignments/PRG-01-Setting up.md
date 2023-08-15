@@ -10,6 +10,7 @@ Everyone will use the same version of Python, and the same IDE. This way, it wil
 
 
 ## Key-terms
+
 Python:
 Python is a cross-platform programming language, which means that it can run on multiple platforms like Windows, macOS, Linux, and has even been ported to the Java and .NET virtual machines. It is free and open-source.
 
@@ -40,4 +41,5 @@ Couldn't see the pictures I was adding as proof
 
 ### Resultaat
 
-![Alt text](<../../00_includes/Python/Hello world.jpg>)
+![Alt text](<../../00_includes/Python/Setting up/Hello world.jpg>)
+
