@@ -31,6 +31,7 @@ The output in the terminal should be the text “Hello world!”
 [https://www.python.org/]
 [https://code.visualstudio.com/download]
 [https://www.youtube.com/watch?v=1ZfO149BJvg&t=215s]
+[https://www.programiz.com/python-programming/first-program]
 
 
 ### Ervaren problemen

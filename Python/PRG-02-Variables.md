@@ -54,6 +54,8 @@ Example output:
 ### Gebruikte bronnen
 
 [https://www.youtube.com/watch?v=TqPzwenhMj0]
+[https://www.youtube.com/watch?v=i83VkP0LHPI&list=PL98qAXLA6afuh50qD2MdAj3ofYjZR_Phn&t=14s]
+
 
 
 ### Ervaren problemen
