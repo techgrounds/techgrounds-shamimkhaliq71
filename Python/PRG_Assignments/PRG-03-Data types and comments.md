@@ -51,6 +51,8 @@ Determine the data types of all four variables (a, b, c, d) using a built in fun
 Make a new variable x and give it the value b + d. Print the value of x. This will raise an error. Fix it so that print(x) prints a float.
 Write a comment above every line of code that tells the reader what is going on in your script.
 
+- You can add a comment by adding # infront of your comment and put in your text. The reader can understand what you have done, but Python ignores the text.
+
 ![Alt text](<../../00_includes/Python/Data type1.jpg>)
 
 Exercise 2:
@@ -59,12 +61,20 @@ Create a new script.
 Use the input() function to get input from the user. Store that input in a variable.
 Find out what data type the output of input() is. See if it is different for different kinds of input (numbers, words, etc.).
 
+- Use input funtion() to get input from the user.
+- Input function9() is in string form. 
+- We can convert string to integer, we use int() function
+- We can convert string to float, we use float() function
+- We can only convert numeric strings to numbers, otherwise you get an error
+
+
 ![Alt text](<../../00_includes/Python/Data type1.jpg>)
 
 ### Gebruikte bronnen
 
 [https://www.youtube.com/watch?v=gCCVsvgR2KU]
 [https://www.toppr.com/guides/python-guide/references/methods-and-functions/methods/built-in/type/python-type/]
+[https://www.youtube.com/watch?v=DRBybZ6hsY0&list=PL98qAXLA6afuh50qD2MdAj3ofYjZR_Phn&index=3]
 
 
 ### Ervaren problemen

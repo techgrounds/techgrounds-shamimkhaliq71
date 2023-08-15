@@ -12,7 +12,11 @@ VS Code
 
 ## Key-terms
 
-Loops
+loops: two types:
+
+While loop: runs while a condition is true.
+
+For loop: runs for a predetermined number of iterations.
 
 
 ## Opdracht
@@ -27,12 +31,20 @@ Example output:
 
 ![Alt text](../00_includes/Python/Loops1.jpg)
 
+Result output:
+
+![Alt text](<../00_includes/Python/While loop1.jpg>)
+
+![Alt text](<../00_includes/Python/While loop2.jpg>)
+
 
 ### Gebruikte bronnen
-[Plaats hier de bronnen die je hebt gebruikt.]
+
+[https://www.youtube.com/watch?v=5AOfDuV6X30&list=PL98qAXLA6afuh50qD2MdAj3ofYjZR_Phn&index=8]
+[https://www.youtube.com/watch?v=yaqMSBr_NCU&list=PL98qAXLA6afuh50qD2MdAj3ofYjZR_Phn&index=10]
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+Needed to understand properly what a while loop was and after wathing a good video, I understood how to do it.
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+See screenshots
