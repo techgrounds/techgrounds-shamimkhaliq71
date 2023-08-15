@@ -47,13 +47,14 @@ a = 'int'
 b = 7
 c = False
 d = "18.5"
+
 Determine the data types of all four variables (a, b, c, d) using a built in function.
 Make a new variable x and give it the value b + d. Print the value of x. This will raise an error. Fix it so that print(x) prints a float.
 Write a comment above every line of code that tells the reader what is going on in your script.
 
 - You can add a comment by adding # infront of your comment and put in your text. The reader can understand what you have done, but Python ignores the text.
 
-![Alt text](<../../00_includes/Python/Data type1.jpg>)
+![Alt text](<../../00_includes/Python/Data types/Data type1.jpg>)
 
 Exercise 2:
 
@@ -65,10 +66,10 @@ Find out what data type the output of input() is. See if it is different for dif
 - Input function9() is in string form. 
 - We can convert string to integer, we use int() function
 - We can convert string to float, we use float() function
-- We can only convert numeric strings to numbers, otherwise you get an error
+- We can only convert numeric strings to numbers, otherwise you get an error.
 
+![Alt text](<../../00_includes/Python/Data types/Data type2.jpg>)
 
-![Alt text](<../../00_includes/Python/Data type1.jpg>)
 
 ### Gebruikte bronnen
 
@@ -78,6 +79,7 @@ Find out what data type the output of input() is. See if it is different for dif
 
 
 ### Ervaren problemen
+
 No problems, because watched some very clear videos
 
 ### Resultaat

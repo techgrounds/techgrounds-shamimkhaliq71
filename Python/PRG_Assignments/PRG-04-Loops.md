@@ -13,6 +13,9 @@ VS Code
 
 ## Key-terms
 
+Sequence: In Python it's a collection of items in an order.
+Eg. Python is a string of 7 characters.  It can also be a list,including few items separated by comma's and enclosed between square brackets. ["","",""]
+
 loops: When you want to run a block of code multiple times. There are two types of loops.
 
 While loop: runs while a condition is true. Also known as infinit loop, it will run untill the memory is full., however, when the statement becomes false, the loop will stop.
@@ -41,11 +44,20 @@ Exercise 2:
 
 Create a new script.
 Copy the code below into your script.
+
 for i in range(10):
 	# do something here
+
 Print the value of i in the for loop. You did not manually assign a value to i. Figure out how its value is determined.
+
+![Alt text](../../00_includes/Python/Loops/Loop_range1.jpg)
+
+
 Add a variable x with value 5 at the top of your script.
 Using the for loop, print the value of x multiplied by the value of i, for up to 50 iterations.
+
+![Alt text](../../00_includes/Python/Loops/Loops_range50.jpg)
+
 
 Exercise 3:
 
@@ -63,6 +75,7 @@ Example output:
 
 [https://www.youtube.com/watch?v=5AOfDuV6X30&list=PL98qAXLA6afuh50qD2MdAj3ofYjZR_Phn&index=8]
 [https://www.youtube.com/watch?v=yaqMSBr_NCU&list=PL98qAXLA6afuh50qD2MdAj3ofYjZR_Phn&index=10]
+
 
 ### Ervaren problemen
 Needed to understand properly what a while loop was and after wathing a good video, I understood how to do the assignment.
