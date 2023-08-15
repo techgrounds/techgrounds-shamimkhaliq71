@@ -40,4 +40,4 @@ Couldn't see the pictures I was adding as proof
 
 ### Resultaat
 
-![Alt text](<../00_includes/Python/Hello world.jpg>) [Title](<PRG-01-Setting up.md>)
+![Alt text](<../../00_includes/Python/Hello world.jpg>)

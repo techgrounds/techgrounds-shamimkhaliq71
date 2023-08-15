@@ -13,8 +13,14 @@ VS Code
 
 ## Key-terms
 
-Variables
-print
+Variables: allow us to store data to use later
+
+Rules to create variables: 
+- You cannot have space between to characters(eg. New Your)
+- You cannot start a variable with a number
+- You cannot use curtain names as variable names. Eg. else = 4, because else is a keyword in Python Syntax
+
+print: a print statement can be put at any time in the code to read the current value of a variable.
 
 ## Opdracht
 
@@ -25,7 +31,7 @@ Print the values of x and y.
 Create a third variable named z. The value of z should be the sum of x and y.
 Print the value of z.
 
-![Alt text](../00_includes/Python/Variable1.jpg)
+![Alt text](../../00_includes/Python/Variable1.jpg)
 
 Exercise 2:
 Create a new script.
@@ -33,9 +39,9 @@ Create a variable name. The value of name should be your name.
 Print the text “Hello, <your name here>!”. Use name in the print statement.
 Example output:
 
-![Alt text](<../00_includes/Python/Hello Casper.jpg>)
+![Alt text](<../../00_includes/Python/Hello Casper.jpg>)
 
-![Alt text](../00_includes/Python/Variable2.jpg)
+![Alt text](../../00_includes/Python/Variable2.jpg)
 
 
 Exercise 3:
@@ -48,8 +54,7 @@ Change the value of that same variable.
 Print the text “Value 3: <value 3 here>”.
 Example output:
 
-![Alt text](../00_includes/Python/Variable3.jpg)
-
+![Alt text](../../00_includes/Python/Variable3.jpg)
 
 ### Gebruikte bronnen
 

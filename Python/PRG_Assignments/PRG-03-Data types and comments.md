@@ -10,14 +10,15 @@ A binary state that is either True or False.
 boolean = True
 
 - string
-Technically an array of characters. Strings are denoted using “ ” double quotes or ‘ ’ single quotes.
+Texual data surrounded by quotes.
+Strings are denoted using “ ” double quotes or ‘ ’ single quotes.
 string = "This is a string"
 
-- int(integer)
+- int(integer): Numeric data
 An integer is a whole number. Ints can be both positive and negative.
 integer = 6
 
-- float
+- float (Numeric data)
 A floating-point number is a decimal number.
 floating_point = 18.5
 
@@ -50,7 +51,7 @@ Determine the data types of all four variables (a, b, c, d) using a built in fun
 Make a new variable x and give it the value b + d. Print the value of x. This will raise an error. Fix it so that print(x) prints a float.
 Write a comment above every line of code that tells the reader what is going on in your script.
 
-![Alt text](<../00_includes/Python/Data type1.jpg>)
+![Alt text](<../../00_includes/Python/Data type1.jpg>)
 
 Exercise 2:
 
@@ -58,8 +59,7 @@ Create a new script.
 Use the input() function to get input from the user. Store that input in a variable.
 Find out what data type the output of input() is. See if it is different for different kinds of input (numbers, words, etc.).
 
-![Alt text](<../00_includes/Python/Data type2.jpg>)
-
+![Alt text](<../../00_includes/Python/Data type1.jpg>)
 
 ### Gebruikte bronnen
 
