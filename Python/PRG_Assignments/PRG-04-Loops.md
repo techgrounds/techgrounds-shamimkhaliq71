@@ -40,7 +40,7 @@ Result output:
 ![Alt text](<../../00_includes/Python/Loops/While loop2.jpg>)
 
 
-Exercise 2:
+Exercise 2: do this again
 
 Create a new script.
 Copy the code below into your script.
@@ -59,7 +59,7 @@ Using the for loop, print the value of x multiplied by the value of i, for up to
 ![Alt text](../../00_includes/Python/Loops/Loops_range50.jpg)
 
 
-Exercise 3:
+Exercise 3: 
 
 Create a new script.
 Copy the array below into your script.
