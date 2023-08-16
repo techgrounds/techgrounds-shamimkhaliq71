@@ -87,7 +87,7 @@ My result output:
 Needed to understand properly what a while loop was and after wathing a good video, I understood how to do the assignment.
 
 For some weird reason, my github and VS code were not linked properly anymore and a second folder got created on my laptop, which led to errors when I tried to safe and commit to my main repository.
-With help of my LC, I manged to get the problem fixed and complete tis assigment.
+With help of my LC and troubleshooting, I manged to get the problem fixed and complete this assigment.
 
 ### Resultaat
 See screenshots
