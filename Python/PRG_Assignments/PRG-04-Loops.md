@@ -1,5 +1,6 @@
 # Loops
 
+
 You can use loops when you want to run a block of code multiple times. For example, you might want to do an operation on every item in a (large) list, or you want to write an algorithm that follows the same set of instructions for multiple iterations.
 There are two types of loops in Python: the while loop and the for loop.
 
@@ -21,6 +22,7 @@ loops: When you want to run a block of code multiple times. There are two types 
 While loop: runs while a condition is true. Also known as infinit loop, it will run untill the memory is full., however, when the statement becomes false, the loop will stop.
 
 For loop: runs for a predetermined number of iterations.
+In Python, a for loop is used to iterate over sequences such as lists, tuples, string, etc.
 
 ## Opdracht
 
@@ -67,6 +69,9 @@ Use a for loop to loop over the array. Print every name individually.
 Example output:
 
 ![Alt text](../../00_includes/Python/Loops/Loops2.jpg)
+
+
+
 
 
 ### Gebruikte bronnen
