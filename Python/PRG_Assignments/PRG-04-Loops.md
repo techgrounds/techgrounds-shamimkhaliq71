@@ -37,7 +37,7 @@ Result output:
 
 ![Alt text](<../../00_includes/Python/Loops/While loop1.jpg>)
 
-![Alt text](<../../00_includes/Python/Loops/While loop2.jpg>)
+![Alt text](<../../00_includes/Python/Loops/While loops2.jpg>)
 
 
 Exercise 2: do this again
@@ -50,7 +50,8 @@ for i in range(10):
 
 Print the value of i in the for loop. You did not manually assign a value to i. Figure out how its value is determined.
 
-![Alt text](../../00_includes/Python/Loops/Loop_range1.jpg)
+![Alt text](../../00_includes/Python/Loops/Range50.jpg)
+
 
 
 Add a variable x with value 5 at the top of your script.

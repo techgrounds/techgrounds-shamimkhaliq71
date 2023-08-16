@@ -18,22 +18,13 @@ for i in range(10):
     print(i)
     
 
-    # Using the for loop, print the value of x multiplied by the value of i, for up to 50 iterations.
+# Using the for loop, print the value of x multiplied by the value of i, for up to 50 iterations.
 
-# Zev's example:
-
-for i in range(0, 55, 5):
-        print(i)
-
-    
-# Kaman's example:
 
 for i in range(50):
-    print(i * x)
-
-
-# Marcel's example:
-
-for i in range(1, 51):
     print(x * i)
 
+# The loop starts with for i in range(50):, 
+# which means that the variable i will take on values from 0 to 49 (50 iterations in total).
+# Inside the loop, print(x * i) calculates the result of multiplying the value of x by the current value of i 
+# and then prints that result.
