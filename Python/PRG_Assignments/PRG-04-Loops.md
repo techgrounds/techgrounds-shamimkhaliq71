@@ -24,6 +24,8 @@ While loop: runs while a condition is true. Also known as infinit loop, it will 
 For loop: runs for a predetermined number of iterations.
 In Python, a for loop is used to iterate over sequences such as lists, tuples, string, etc.
 
+Array: In Python, they are containers which are able to store more than one item at the same time. Specifically, they are an ordered collection of elements with every value being of the same data type.
+
 ## Opdracht
 
 Exercise 1:
@@ -70,8 +72,9 @@ Example output:
 
 ![Alt text](../../00_includes/Python/Loops/Loops2.jpg)
 
+My result output:
 
-
+![Alt text](../../00_includes/Python/Loops/Loops_naam_array.jpg)
 
 
 ### Gebruikte bronnen
@@ -82,6 +85,9 @@ Example output:
 
 ### Ervaren problemen
 Needed to understand properly what a while loop was and after wathing a good video, I understood how to do the assignment.
+
+For some weird reason, my github and VS code were not linked properly anymore and a second folder got created on my laptop, which led to errors when I tried to safe and commit to my main repository.
+With help of my LC, I manged to get the problem fixed and complete tis assigment.
 
 ### Resultaat
 See screenshots
