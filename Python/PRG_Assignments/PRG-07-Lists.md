@@ -52,9 +52,9 @@ My output:
 
 ### Gebruikte bronnen
 
-https://www.youtube.com/watch?v=muKeRgZ9LnU
+[https://www.youtube.com/watch?v=muKeRgZ9LnU]
 [https://www.w3schools.com/python/python_lists.asp]
-
+[Chatgpt]
 
 ### Ervaren problemen
 

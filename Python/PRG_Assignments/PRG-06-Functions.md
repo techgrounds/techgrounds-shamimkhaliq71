@@ -80,8 +80,6 @@ My output:
 [https://www.youtube.com/watch?v=-Bkupx9gX0o]
 
 
-
-
 ### Ervaren problemen
 
 Not really problems, but leared different ways of writing code shorter.
