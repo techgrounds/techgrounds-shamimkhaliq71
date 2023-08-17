@@ -33,7 +33,7 @@ Example output:
 
 ![Alt text](../../00_includes/Python/Functions/Example1.jpg)
 
-Result of my output:
+My output:
 
 ![Alt text](<../../00_includes/Python/Functions/Random numbers.jpg>)
 
@@ -46,6 +46,10 @@ Rewrite your function so that it takes a string as an argument. Then, it should 
 Example output:
 
 ![Alt text](../../00_includes/Python/Functions/Example2.jpg)
+
+My output:
+
+![Alt text](../../00_includes/Python/Functions/Myfunction1.jpg)
 
 
 Exercise 3:
