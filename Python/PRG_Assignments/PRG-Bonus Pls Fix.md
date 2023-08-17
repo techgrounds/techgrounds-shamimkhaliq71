@@ -29,11 +29,20 @@ Bugfix 2:
 
 ![Alt text](../../00_includes/Python/Bugfixes/Bugfix2.jpg)
 
+Bugfix 3:
+
+![Alt text](../../00_includes/Python/Bugfixes/Bugfix3.jpg)
+
+Bugfix 4:
+
+
 ### Gebruikte bronnen
 
 
 ### Ervaren problemen
-[Geef een korte beschrijving van de problemen waar je tegenaan bent gelopen met je gevonden oplossing.]
+
+Finding it hard, to see all the errors nd fix them, but really good practice.
 
 ### Resultaat
-[Omschrijf hoe je weet dat je opdracht gelukt is (gebruik screenshots waar nodig).]
+
+See screenshots
