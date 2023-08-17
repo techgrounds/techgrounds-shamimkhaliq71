@@ -59,16 +59,27 @@ Copy the code below into your script.
 def avg():
 	# write your code here
 
-# you are not allowed to edit any code below here
+
+#you are not allowed to edit any code below here
+
 x = 128
 y = 255
 z = avg(x,y)
+
 print("The average of",x,"and",y,"is",z)
 Write the custom function avg() so that it returns the average of the given parameters. You are not allowed to edit any code below the second comment.
+
+My output:
+
+![Alt text](<../../00_includes/Python/Functions/Average number.jpg>)
+
 
 ### Gebruikte bronnen
 
 [https://www.toppr.com/guides/python-guide/tutorials/modules/modules/random/use-random-module-to-generate-random-numbers-in-python/#:~:text=0.6229016948897019%200.7417869892607294%200.7951935655656966-,Python%20Program%20to%20Generate%20Random%20Floats,arguments%20required%20for%20the%20function.]
+[https://www.youtube.com/watch?v=-Bkupx9gX0o]
+
+
 
 
 ### Ervaren problemen
