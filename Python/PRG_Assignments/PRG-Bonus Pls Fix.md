@@ -35,6 +35,9 @@ Bugfix 3:
 
 Bugfix 4:
 
+![Alt text](../../00_includes/Python/Bugfixes/Bugfix4.jpg)
+
+BUgfix 5:
 
 ### Gebruikte bronnen
 
