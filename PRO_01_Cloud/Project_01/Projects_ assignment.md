@@ -107,7 +107,7 @@ This file is where you track your days in a structured manner. You indicate in a
 
 You can use the following template:
 
-![Alt text](<../00_includes/PRO_01_Cloud/Log template.jpg>)
+![Alt text](<../../00_includes/PRO_01_Cloud/Log template.jpg>)
 
 Interim Presentations: 
 
