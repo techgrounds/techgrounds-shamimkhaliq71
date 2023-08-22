@@ -60,6 +60,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2022-05-01' = {
   }
 }
 
+
 In summary, Infrastructure as Code is a methodology that automates infrastructure provisioning using code, providing benefits like increased confidence, better environment management, and improved understanding of cloud resources. The choice between imperative and declarative approaches depends on existing practices and desired flexibility. Bicep templates exemplify declarative code by defining desired configurations without specifying execution steps.
 
 
