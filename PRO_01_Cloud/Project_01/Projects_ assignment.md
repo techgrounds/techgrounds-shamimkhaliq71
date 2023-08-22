@@ -235,6 +235,12 @@ The customer wants to internally test your architecture before using the code in
 Deliverable:
 Configuration for an MVP deployment
 
+# Important Dates
+
+- Update progress, Version 1.0: 15-09-2023 (wk 5)
+- Update Progress, Version 1.1: 29-09-2023 (wk 7)	
+- Final deadline: 06-10-2023 (wk 8)							
+
 # Resources
 
 [https://learn.microsoft.com/nl-nl/azure/azure-resource-manager/bicep/]
