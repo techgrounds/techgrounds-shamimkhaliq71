@@ -45,8 +45,6 @@ Provides greater flexibility and maintains a clear distinction between desired s
 
 - Bicep Template Example:
 
-bicep
-
 resource storageAccount 'Microsoft.Storage/storageAccounts@2022-05-01' = {
   name: 'mystorageaccount'
   location: 'eastus'
