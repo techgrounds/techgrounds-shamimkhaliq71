@@ -1,8 +1,12 @@
 # Project Assignment:
 
-You have been tasked with assisting a company in transitioning to the cloud. The company had its infrastructure analyzed by a previous team, and a diagram was created based on the current situation. You can find these diagrams in the attachments.
+You have been tasked with assisting a company in transitioning to the cloud. The company had its infrastructure analyzed by a previous team, and a diagram was created based on the current situation.
 
-Your role is to build the Infrastructure as Code app to migrate this design to the cloud. The intention is to use CDK from AWS or Bicep from Azure for this app. The following requirements have been identified as necessary:
+See below the digram current situation:
+
+![Alt text](<../../00_includes/PRO_01_Cloud/Current infrastructure.jpg>)
+
+Your role is to build the Infrastructure as Code app to migrate this design to the cloud. The intention is to use Bicep from Azure for this app. The following requirements have been identified as necessary:
 
 - All VM disks must be encrypted.
 - The web server needs to be backed up daily, with backups retained for 7 days.
@@ -14,7 +18,8 @@ Your role is to build the Infrastructure as Code app to migrate this design to t
 - SSH or RDP connections to the web server are allowed only from the admin server.
 
 Don't hesitate to propose or implement improvements in the architecture, but make firm decisions to meet the deadline.
-In the implementation of the CDK/Bicep app, ensure you start small and incrementally add features. Always maintain a commit/branch where you can revert to a working version of your application. You can use Git Tags to label commits that are easily identifiable in GitHub.
+In the implementation of the Bicep app, ensure you start small and incrementally add features. Always maintain a commit/branch where you can revert to a working version of your application. 
+You can use Git Tags to label commits that are easily identifiable in GitHub.
 If your code meets the above requirements, you can use the tag 'v1.0'.
 
 Most participants spend approximately €30-40 for the entire project. There is an absolute maximum of €50 per participant. Exceeding this amount will result in the project being halted.
@@ -24,7 +29,9 @@ How are we going to proceed?
 The project consists of two phases. The first phase lasts for 5 weeks, during which you will work on v1.0 of the application while also learning Python programming.
 The second phase of the project will introduce a change to your architecture. This simulates a situation where a client introduces new requirements to your project and will be released later.
 
-You will work individually on your own implementation, but you will also work in teams. The following agreements apply:
+You will work individually on your own implementation, but you will also work in teams. 
+
+The following agreements apply:
 
 - A sprint is 2 weeks, except for the first sprint, which is 3 weeks.
 - Every last Friday, there is a sprint retrospective.
@@ -77,7 +84,7 @@ Deliverables:
 
 The following deliverables are expected in your GitHub repository at the end of this project:
 
-- A functional CDK / Bicep app of the MVP.
+- A functional Bicep app of the MVP.
 - Design Documentation.
 - Decision Documentation.
 - Time logs.
@@ -248,3 +255,5 @@ Configuration for an MVP deployment
 [https://learn.microsoft.com/nl-nl/azure/azure-resource-manager/templates/]
 
 [https://learn.microsoft.com/en-us/azure/templates/]
+
+[https://app.diagrams.net/]
