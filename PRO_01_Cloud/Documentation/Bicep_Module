@@ -37,7 +37,7 @@ When you deploy a resource or series of resources to Azure, you submit the Bicep
 
 ![Alt text](<../../00_includes/PRO_01_Cloud/Bicep deployment.jpg>)
 
-Note: Transpilation is the process of converting source code written in one language into another language.
+Note: Transpilation is the process of converting source code written in one language into another language. 
 
 # Is Bicep the right tool?
 
