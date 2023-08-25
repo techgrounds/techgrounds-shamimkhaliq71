@@ -10,6 +10,7 @@ Daily report
 [https://www.youtube.com/watch?v=MP60ND7Upn4&list=PLlrxD0HtieHjzqIRjPoERUGj49rve3rCM]
 
 - making sure I fill in my time logs for each day.
+- 
 
 
 Obstacles:
