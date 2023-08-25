@@ -7,8 +7,8 @@ Daily report
 
 - Read project related documenttion
 - Draw questions from the for the product owner.
-- Created new folders for each task and add all information relevant to the topic. 
-- Set up systems properly and check if evrything is working properly.
+- Created new folders for each task and adding all relevant information to the topic. 
+- Set up systems properly and check if everything is working properly.
 
 Obstacles:
 
