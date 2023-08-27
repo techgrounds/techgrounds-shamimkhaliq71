@@ -58,6 +58,7 @@ Scripts execute steps to create, modify, and remove resources.
 Can fully automate provisioning but may become complex and require frequent updates.
 
 With imperative code, you execute a sequence of commands, in a specific order, to reach an end configuration. This process defines what the code should accomplish, and it also defines how to accomplish the task.
+Imparative approach is like a step by step instruction manual. You have more control, but with that come mor responsibility too.
 
 
 2. Declarative Approach:
