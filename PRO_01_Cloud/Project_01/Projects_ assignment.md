@@ -1,12 +1,14 @@
 # Project Assignment:
 
-You have been tasked with assisting a company in transitioning to the cloud. The company had its infrastructure analyzed by a previous team, and a diagram was created based on the current situation.
+This project is designed to assist a company in transitioning to the cloud. The company had its infrastructure analyzed by a previous team, and a diagram was created based on the current situation.
 
 See below the digram current situation:
 
 ![Alt text](<../../00_includes/PRO_01_Cloud/Current infrastructure.jpg>)
 
-Your role is to build the Infrastructure as Code app to migrate this design to the cloud. The intention is to use Bicep from Azure for this app. The following requirements have been identified as necessary:
+The assignment is to build the Infrastructure as Code app to migrate this design to the cloud. The intention is to use Bicep from Azure for this app.
+
+The following requirements have been identified as necessary:
 
 - All VM disks must be encrypted.
 - The web server needs to be backed up daily, with backups retained for 7 days.
@@ -26,8 +28,10 @@ Most participants spend approximately €30-40 for the entire project. There is 
 
 How are we going to proceed?
 
-The project consists of two phases. The first phase lasts for 5 weeks, during which you will work on v1.0 of the application while also learning Python programming.
-The second phase of the project will introduce a change to your architecture. This simulates a situation where a client introduces new requirements to your project and will be released later.
+The project consists of two phases, v1.0 and v1.1
+
+- The first phase lasts for 5 weeks, during which you will work on v1.0 of the application while also learning Python programming.
+- The second phase of the project will introduce a change to your architecture. This simulates a situation where a client introduces new requirements to your project and will be released later.
 
 You will work individually on your own implementation, but you will also work in teams. 
 
@@ -113,6 +117,9 @@ Interim Presentations:
 
 At the end of each sprint, you will create a presentation of your progress. In this presentation, you will discuss what you have done during the past sprint. Upon completion, you will provide a demonstration of your work.
 
+Progress v1.0 presentation: 15-09-2023
+Progress v1.1 presentation: 29-09-2023
+
 Final Presentation: 06-10-2023
 
 On the last Friday of the project, everyone presents the entire project to each other. During this presentation, you share your experience, design decisions, and the architecture of your project.
@@ -121,7 +128,7 @@ User Stories:
 
 The Product Owners have already held a meeting and have formulated the following epics and backlog. As a team, you will work on these epics and user stories. If your team identifies user stories that need to be divided into smaller stories, your team is free to do so.
 
-1. The following epics apply to the project:
+# The following epics apply to the project:
 
 Exploration: 
 The exploration epic is meant for making decisions about the project. Once you've completed this epic, ensure that you don't need to revisit it. You have too little time to make significant changes.
@@ -133,7 +140,7 @@ v1.1
 Version 1.1 involves delivering the Infrastructure as Code and all required documentation according to the requirements that will be available later.
 
 
-2. As a team, we want to have a clear understanding of the application requirements.
+1. As a team, we want to have a clear understanding of the application requirements.
 
 Epic: Exploration
 
@@ -143,7 +150,7 @@ You've already received a lot of information. Some requirements are already ment
 Deliverable:
 A bullet-point description of all requirements
 
-3. As a team, we want a clear overview of the assumptions we have made.
+2. As a team, we want a clear overview of the assumptions we have made.
 
 Epic: Exploration
 
@@ -153,7 +160,7 @@ You have received a lot of information. There might be questions that none of th
 Deliverable:
 A bullet-point overview of all assumptions
 
-4. As a team, we want to have a clear overview of the Cloud Infrastructure required by the application.
+3. As a team, we want to have a clear overview of the Cloud Infrastructure required by the application.
 
 Epic: Exploration
 
@@ -163,7 +170,7 @@ You have received a lot of information and already have a design. However, the d
 Deliverable:
 An overview of all the services to be used.
 
-5. As a customer, I want a functional application that allows me to deploy a secure network.
+4. As a customer, I want a functional application that allows me to deploy a secure network.
 
 Epic: v1.0
 
@@ -173,7 +180,7 @@ The application needs to build a network that meets all the requirements. An exa
 Deliverable:
 IaC code for the network and all its components
 
-6. As a customer, I want a functional application that allows me to deploy a functional web server.
+5. As a customer, I want a functional application that allows me to deploy a functional web server.
 
 Epic: v1.0
 
@@ -183,7 +190,7 @@ The application needs to start a web server and make it accessible to the genera
 Deliverable:
 IaC code for the web server and all the necessary components
 
-7. As a customer, I want a functional application that allows me to deploy a functional management server.
+6. As a customer, I want a functional application that allows me to deploy a functional management server.
 
 Epic: v1.0
 
@@ -193,7 +200,7 @@ The application needs to start a management server and make it accessible to a l
 Deliverable:
 IaC code for a management server with all the necessary components
 
-8. As a customer, I want a storage solution where bootstrap/post-deployment scripts can be stored.
+7. As a customer, I want a storage solution where bootstrap/post-deployment scripts can be stored.
 
 Epic: v1.0
 
@@ -203,7 +210,7 @@ A location must be available to store bootstrap scripts. These scripts should no
 Deliverable:
 IaC code for a storage solution for scripts
 
-9. As a customer, I want all my data in the infrastructure to be encrypted.
+8. As a customer, I want all my data in the infrastructure to be encrypted.
 
 Epic: v1.0
 
@@ -213,7 +220,7 @@ Data security at rest and in motion is highly valued. All data must be encrypted
 Deliverable:
 IaC code for encryption facilities
 
-10. As a customer, I want a backup every day that is retained for 7 days.
+9. As a customer, I want a backup every day that is retained for 7 days.
 
 Epic: v1.0
 
@@ -223,7 +230,7 @@ The customer would like to have a backup available in case it is necessary to re
 Deliverable:
 IaC code for backup facilities
 
-11. As a customer, I want to know how to use the application.
+10. As a customer, I want to know how to use the application.
 
 Epic: v1.0
 Description:
@@ -232,7 +239,7 @@ Ensure that the customer can understand how to use the application. Make it clea
 Deliverable:
 Documentation for using the application
 
-12. As a customer, I want to be able to deploy an MVP for testing.
+11. As a customer, I want to be able to deploy an MVP for testing.
 
 Epic: v1.0
 
