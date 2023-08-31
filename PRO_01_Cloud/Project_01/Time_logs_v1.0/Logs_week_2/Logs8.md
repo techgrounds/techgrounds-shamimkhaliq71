@@ -19,4 +19,4 @@ Solutions:
 
 Do not panic and stay calm!
 
-In evening when electric was back and everyhing was up and running again, I watched the rest of the video of MS learn module 3 and updated some files.
+In evening when electric was back and everyhing was up and running again, I watched the rest of the video of MS learn module 2, made a start with 3 and updated some files.

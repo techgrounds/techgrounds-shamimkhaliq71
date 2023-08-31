@@ -2,7 +2,8 @@
 
 Parameters and Variables are two Bicep features that can make your templates flexible and reusable. 
 
-- A parameter lets you bring in values from outside the template file. For example, if someone is manually deploying the template by using the Azure CLI or Azure PowerShell, they'll be asked to provide values for each parameter. 
+- A parameter lets you bring in values from outside the template file. 
+With parameters, you can provide information to a Bicep template at deployment time. You can make a Bicep template flexible and reusable by declaring parameters within your template.
 
 It's usually a good idea to use parameters for things that will change between each deployment, like:
 
@@ -10,6 +11,24 @@ The names of resources that need to be unique.
 Locations into which to deploy the resources.
 Settings that affect the pricing of resources, like their SKUs, pricing tiers, and instance counts.
 Credentials and information needed to access other systems that aren't defined in the template.
+
+*In a Bicep template, you declare a parameter by using the param keyword. You can put these declarations anywhere in the template file, although it's usually a good idea to put them at the top of the file so your Bicep code is easy to read.*
+
+Here's how you declare a parameter:
+
+*param environmentName string*
+
+Understand parameter types
+
+When you declare a parameter, you need to tell Bicep what type of information the parameter will contain. Bicep will ensure that the value assigned to the parameter is compatible with the parameter type.
+
+Parameters in Bicep can be one of the following types:
+
+- string, which lets you enter arbitrary text.
+- int, which lets you enter a number.
+- bool, which represents a Boolean (true or false) value.
+- object and array, which represent structured data and lists.
+
 
 - A variable is defined and set within the template. Variables let you store important information in one place and refer to it throughout the template without having to copy and paste it.
 
