@@ -8,7 +8,6 @@ Made a good start by completing yesterdsays script and deploying it to Azure.
 Just a minor typo error, but all went well and got deployed successfully. A resource group and storage account got created in Azure. 
 
 
-
 Obstacles:
 
 I have Bash setup as my default terminal and I was able to create and deploy a resource group in Azure by using the following command: 
@@ -23,6 +22,7 @@ However, using the same commands in Powershell terminal, it worked.
 
 Solutions:
 
-I tried a different terminal to create and deploy an Azure resource group and within that create an storageaccount. It worked.
+I tried a different terminal to create and deploy an Azure resource group and within that create an storageaccount. It worked, but did some further checks and figured out that I have to login to Azure via bash terminal every time before using it.
+I checked with my group and they said to be doing the same to use bash terminal.
 
 

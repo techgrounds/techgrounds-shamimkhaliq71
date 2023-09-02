@@ -1,6 +1,6 @@
 param location string = 'westus3'
-param storageAccountName string = 'shamimkhaliqstorage71${uniqueString(resourceGroup().id)}'
-param appServiceAppName string = 'shamimkhaliqstorage71${uniqueString(resourceGroup().id)}'
+param storageAccountName string = 'cloud11storagetest2${uniqueString(resourceGroup().id)}'
+param appServiceAppName string = 'cloud11test2${uniqueString(resourceGroup().id)}'
 
 
 @allowed([
