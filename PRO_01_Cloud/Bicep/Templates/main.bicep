@@ -1,11 +1,24 @@
+
 param location string = 'westeurope'
-targetScope = 'resourceGroup'
+param storageAccountName string = 'lily1${uniqueString(resourceGroup().id)}'
+param appServiceAppName string = 'first-resource-creation${uniqueString(resourceGroup().id)}'
+
+
+@allowed([
+  'nonprod'
+  'prod'
+])
+param environmentType string  
+
+
+var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
+
 
 resource storageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
-  name: 'shamimkhaliqstorage71'
+  name: storageAccountName
   location: location
   sku: {
-    name: 'Standard_LRS'
+    name: storageAccountSkuName
   }
   kind: 'StorageV2'
   properties: {
@@ -14,21 +27,13 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
 } 
  
 
-resource appServicePlan 'Microsoft.Web/serverfarms@2022-09-01' = {
-  name: 'first-resource-creation'
-  location: location
-  sku: {
-    name: 'F1'
+module appService 'modules/appService.bicep' = {
+  name: 'appService'
+  params: {
+    location: location
+    appServiceAppName: appServiceAppName
+    environmentType: environmentType
   }
 }
 
-resource appServiceApp 'Microsoft.Web/sites@2022-09-01' = {
-  name: 'shamimkhaliqstorage71'
-  location: location
-  properties: {
-    serverFarmId: appServicePlan.id
-    httpsOnly: true
-  }
-}
-
-
+output appServiceAppHostName string = appService.outputs.appServiceAppHostName
