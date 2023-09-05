@@ -1,6 +1,7 @@
 param location string
 param appServiceAppName string
 
+@description('The Type of the environment. This must be nonprod or prod.')
 @allowed([
   'nonprod'
   'prod'
