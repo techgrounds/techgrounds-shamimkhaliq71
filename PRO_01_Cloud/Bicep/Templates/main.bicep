@@ -20,7 +20,8 @@ module storageAccountModule './Modules/storageaccount.bicep' = {
   }
 }
 
-
+//Deploy everything from main file( double check the path)
+//az deployment group create --template-file main.bicep --resource-group cloud11_project
 
 
 
