@@ -16,7 +16,7 @@ What are the expectations in this project?
 
 IMPORTANT: You will acquire new knowledge during the project. This is very normal in the IT world. Even the most senior engineers will need to learn new things before starting a new project. Concepts like Infrastructure as Code will now be applied, and it's expected that you will need time to learn the details. Research is not wasted time! Learning is not wasted time!
 
-At the bottom, you can see the current architecture of our application. You are responsible for migrating the current servers to the cloud and automating the deployment of this infrastructure. This must be done using CDK (for AWS) or Bicep (for Azure). For now, using simple placeholder content for the website is sufficient (think of a basic index.html instead of a complete website).
+At the bottom, you can see the current architecture of our application. You are responsible for migrating the current servers to the cloud and automating the deployment of this infrastructure. This must be done Bicep (for Azure). For now, using simple placeholder content for the website is sufficient (think of a basic index.html instead of a complete website).
 
 We will work in 2-week sprints, at the end of which you will present your progress to stakeholders. Eventually, you will submit the project along with deliverables individually via GitHub.
 
@@ -25,4 +25,5 @@ Requirements:
 - Your GitHub repository
 - Project Templates
 - Your cloud environment
+
 
