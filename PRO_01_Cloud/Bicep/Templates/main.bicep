@@ -20,6 +20,16 @@ module storageAccountModule './Modules/storageaccount.bicep' = {
   }
 }
 
+// Reference the keyvault module
+module keyvault 'Modules/parameters.bicep' = {
+  name: 'Chabi1'
+ // Other module properties
+ params: {
+  location: location 
+}
+}
+
+
 //open bash terminal >> login to Azure (az login)
 
 //set up or select subscription (az account set --subscription 'Cloud Student 10')
