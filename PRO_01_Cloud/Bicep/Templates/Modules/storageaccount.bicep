@@ -22,8 +22,13 @@ output storageAccountName string = storageAccountName // Output storageAccountNa
 
 //set up or select subscription (az account set --subscription 'Cloud Student 10')
 
+//create or check if there's a resource group available(cloud11_project)
+
+//check if you have selected the right path (cd Modules)
+
 //create resource storage account in Azure 
 //az deployment group create --template-file storageaccount.bicep --resource-group cloud11_project --parameters location="westeurope" storageAccountName="lily1"
 
-//check in Azure portal under resource groups(cloud11_project) = Succeeded
+//check in Azure portal under resource groups(cloud11_project) deployments 
+//There should be 3 modules; main, storageAccountModule and ParametersModule = Succeeded
 

@@ -20,8 +20,17 @@ module storageAccountModule './Modules/storageaccount.bicep' = {
   }
 }
 
-//Deploy everything from main file( double check the path)
+//open bash terminal >> login to Azure (az login)
+
+//set up or select subscription (az account set --subscription 'Cloud Student 10')
+
+//create or check if there's a resource group available(cloud11_project)
+//az group create --name cloud11_project --location westeurope
+
+//Deploy everything from main file
+//check if you have selected the right path (cd Templates or cd .. to go up a directory)
+
 //az deployment group create --template-file main.bicep --resource-group cloud11_project
 
-
+//check in Azure portal
 
