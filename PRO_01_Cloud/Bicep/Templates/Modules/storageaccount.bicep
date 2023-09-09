@@ -23,6 +23,7 @@ output storageAccountName string = storageAccountName // Output storageAccountNa
 //set up or select subscription (az account set --subscription 'Cloud Student 10')
 
 //create or check if there's a resource group available(cloud11_project)
+//az group create --name cloud11_project --location westeurope
 
 //check if you have selected the right path (cd Modules)
 

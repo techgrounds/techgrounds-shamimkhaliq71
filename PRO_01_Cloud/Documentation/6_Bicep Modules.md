@@ -66,11 +66,22 @@ output appServiceAppName string = appServiceAppName
 The output definition includes a few key parts:
 
 The *output* keyword tells Bicep you're defining an output.
+
 *appServiceAppName* is the name of the output. When someone deploys the template successfully, the output values will include the name you specified so they can access the values they're expecting.
+
 *string* is the type of the output. Bicep outputs support the same types as parameters.
 
 A value must be specified for each output. Unlike parameters, outputs always need to have values. Output values can be expressions, references to parameters or variables, or properties of resources that are deployed within the file.
 
-Modules and outputs
+# Modules and outputs
 
 Just like templates, Bicep modules can define outputs. It's common to chain modules together within a template. In that case, the output from one module can be a parameter for another module. By using modules and outputs together, you can create powerful and reusable Bicep files.
+
+
+# Resources
+
+[https://www.youtube.com/watch?v=yOjQqXlpXEk]
+
+[https://learn.microsoft.com/en-gb/shows/learn-live/use-bicep-deploy-azure-infrastructure-as-code-ep03-build-reusable-bicep-templates-by-using-parameters?WT.mc_id=learnlive-20220322A]
+
+[https://learn.microsoft.com/nl-nl/azure/azure-resource-manager/bicep/]

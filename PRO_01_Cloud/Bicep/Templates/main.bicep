@@ -21,11 +21,12 @@ module storageAccountModule './Modules/storageaccount.bicep' = {
 }
 
 // Reference the keyvault module
-module keyvault 'Modules/parameters.bicep' = {
-  name: 'Chabi1'
+module keyvault 'Modules/keyvault.bicep' = {
+  name: 'keyvaultModule'
  // Other module properties
  params: {
   location: location 
+  pass: 
 }
 }
 
