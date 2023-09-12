@@ -1,11 +1,11 @@
 // description of location of the resources
-param location string = resourceGroup().location
+param Location string 
 
 //description of name for vnet1
-param vnet1Name string = 'app-prd-vnet'
+param vnet1Name string = 'App_vnet'
 
 //description of name for subnet1
-param subnet1Name string = 'app-prd-subnet1'
+param subnet1Name string = 'App_subnet1'
 
 //description of name for nsg1
 param nsg1Name string = 'nsg1'
@@ -14,7 +14,7 @@ param nsg1Name string = 'nsg1'
 
 resource vnet1 'Microsoft.Network/virtualNetworks@2023-04-01' = {
   name: vnet1Name
-  location: location
+  location: Location
   properties: {
     addressSpace: {
       addressPrefixes: [
@@ -36,7 +36,7 @@ resource subnet1 'Microsoft.Network/virtualNetworks/subnets@2023-04-01' = {
 }
 
 resource nsg1 'Microsoft.Network/networkSecurityGroups@2023-04-01' = {
- location: location
+ location: Location
   name:nsg1Name
   properties:{
     securityRules:[

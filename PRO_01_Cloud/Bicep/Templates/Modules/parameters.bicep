@@ -1,7 +1,7 @@
 // parameters.bicep
 
 // Parameters for location and storageAccountName
-param location string = resourceGroup().location
+param resourceGroupLocation string 
 param storageAccountName string = 'lily1'
 
 //prameter for tenantID
@@ -20,7 +20,7 @@ param subnet1Name string = 'app-prd-subnet1'
 param nsg1Name string = 'nsg1'
 
 
-output location string = location
+output location string = resourceGroupLocation
 output storageAccountName string = storageAccountName
 output tenantID string = tenantID 
 output objectID string = objectID

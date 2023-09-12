@@ -1,14 +1,28 @@
 
 // main.bicep
 
+
+// Parameters for location 
 param location string = 'westeurope'
+
+
+// Parameters for resource names App_vnet1
+param vnet1Name string
+param subnet1Name string
+param nsg1Name string
+
+// Parameters for resource names Man_vnet
+param vnet2Name string
+param subnet2Name string
+param nsg2Name string
 
 // Reference the parameters module
 module parametersModule './Modules/parameters.bicep' = {
   name: 'parametersModule'
-  params: {
-    location: location
+  params:{
+    resourceGroupLocation: location
   }
+  
 }
 
 // Reference the storage account module
@@ -21,13 +35,33 @@ module storageAccountModule './Modules/storageaccount.bicep' = {
 }
 
 // Reference the keyvault module
-module keyvault 'Modules/keyvault.bicep' = {
+module keyvaultModule 'Modules/keyvault.bicep' = {
   name: 'keyvaultModule'
  // Other module properties
  params: {
   location: location 
-  pass: 
+  pass: 'Haseeb@03'
 }
+}
+
+module Vnet1Module 'Modules/App_vnet1.bicep' = {
+  name:'Vnet1Modeule'
+  params:{
+    Location: location 
+    vnet1Name: vnet1Name
+    subnet1Name: subnet1Name
+    nsg1Name: nsg1Name
+  }
+}
+
+module Vnet2Module 'Modules/App_vnet1.bicep' = {
+  name:'Vnet2Modeule'
+  params:{
+    Location: location 
+    vnet1Name: vnet2Name
+    subnet1Name: subnet2Name
+    nsg1Name: nsg2Name
+  }
 }
 
 
