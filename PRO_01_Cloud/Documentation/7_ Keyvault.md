@@ -77,3 +77,5 @@ Key Vault itself can integrate with storage accounts, event hubs, and log analyt
 [https://learn.microsoft.com/en-us/azure/key-vault/general/about-keys-secrets-certificates]
 
 [https://www.youtube.com/watch?v=yOjQqXlpXEk]
+
+[https://learn.microsoft.com/en-gb/shows/learn-live/use-bicep-deploy-azure-infrastructure-as-code-ep03-build-reusable-bicep-templates-by-using-parameters?WT.mc_id=learnlive-20220322A]
