@@ -2,67 +2,81 @@
 // main.bicep
 
 
-// Parameters for location 
+//discription of location 
 param location string = 'westeurope'
 
+//discription of StorageAccount
+param storageAccountName string
 
-// Parameters for resource names App_vnet1
-param vnet1Name string
-param subnet1Name string
-param nsg1Name string
+//discription of keyvault
+//discription of secret1
+@secure()
+param pass string 
 
-// Parameters for resource names Man_vnet
+//discription of resource names Man_vnet2
 param vnet2Name string
 param subnet2Name string
 param nsg2Name string
 
-// Reference the parameters module
+//discription of Webserver
+//description('adminUserName')
+@secure()
+param adminUsername string
+
+//description('Admin_PW')
+@secure()
+param adminPasswordOrKey string
+
+//Reference the parameters module
 module parametersModule './Modules/parameters.bicep' = {
   name: 'parametersModule'
   params:{
-    resourceGroupLocation: location
+    location: location
   }
   
 }
 
-// Reference the storage account module
+//Reference the storage account module
 module storageAccountModule './Modules/storageaccount.bicep' = {
   name: 'storageAccountModule'
   params: {
-    location: parametersModule.outputs.location
-    storageAccountName: parametersModule.outputs.storageAccountName
+    location: location
+    storageAccountName: storageAccountName
   }
 }
 
-// Reference the keyvault module
+//Reference the keyvault module
 module keyvaultModule 'Modules/keyvault.bicep' = {
   name: 'keyvaultModule'
  // Other module properties
  params: {
   location: location 
-  pass: 'Haseeb@03'
+  pass:pass
 }
 }
 
-module Vnet1Module 'Modules/App_vnet1.bicep' = {
-  name:'Vnet1Modeule'
-  params:{
-    Location: location 
-    vnet1Name: vnet1Name
-    subnet1Name: subnet1Name
-    nsg1Name: nsg1Name
-  }
-}
-
-module Vnet2Module 'Modules/App_vnet1.bicep' = {
+//Reference the Vnet2 module
+module Vnet2Module  'Modules/management_vnet2.bicep' = {
   name:'Vnet2Modeule'
   params:{
     Location: location 
-    vnet1Name: vnet2Name
-    subnet1Name: subnet2Name
-    nsg1Name: nsg2Name
+    vnet2Name: vnet2Name
+    subnet2Name: subnet2Name
+    nsg2Name: nsg2Name
   }
 }
+
+//Reference the Webserver and relating resources
+module WebserverModule 'Modules/Webserver.bicep' = {
+  name: 'WebserverModule'
+  params: {
+    location:location
+    adminPasswordOrKey:adminPasswordOrKey 
+    adminUsername:adminUsername
+  }
+}
+
+
 
 
 //open bash terminal >> login to Azure (az login)

@@ -1,13 +1,13 @@
 // description of location of the resources
 param Location string 
 
-//description of name for vnet1
-param vnet2Name string = 'Man_vnet'
+//description of name for vnet2
+param vnet2Name string = 'Man_vnet2'
 
-//description of name for subnet1
+//description of name for subnet2
 param subnet2Name string = 'Man_subnet2'
 
-//description of name for nsg1
+//description of name for nsg2
 param nsg2Name string = 'nsg2'
 
 

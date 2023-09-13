@@ -2,7 +2,7 @@
 param Location string 
 
 //description of name for vnet1
-param vnet1Name string = 'App_vnet'
+param vnet1Name string = 'App_vnet1'
 
 //description of name for subnet1
 param subnet1Name string = 'App_subnet1'

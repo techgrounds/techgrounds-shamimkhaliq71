@@ -3,8 +3,8 @@
 param location string
 param storageAccountName string
 
-//description('Resource declaration.The name and location properties for the storageAccount, 
-//which are taken from the storageAccountName and location parameters.')
+//description resource declaration. The name and location properties for the storageAccount, 
+//which are taken from the storageAccountName and location parameters.
 resource storageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
   name: storageAccountName
   location: location 
@@ -12,6 +12,9 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
     name: 'Standard_LRS'
   }
   kind: 'StorageV2'
+  properties:{
+    accessTier:'Hot'
+  }
 }
 
 output location string = location // Output location for reference

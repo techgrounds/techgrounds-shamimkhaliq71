@@ -1,16 +1,16 @@
-//parameter Specifies the name of the key vault.
+//discription of the name of the key vault.
 param keyVaultName string = 'Chabi1'
 
-//parameter for location
+//discription of location
 param location string = resourceGroup().location
 
-//parameter for tenantID
+//discription of tenantID
 param tenantID string = 'de60b253-74bd-4365-b598-b9e55a2b208d'
 
-//parameter for objectID
+//discription of objectID
 param objectID string = 'a04a1d40-0b09-48f7-91a7-d32abf5a1e31'
 
-//parameter for secret1
+//discription of secret1
 @secure()
 param pass string 
 
@@ -85,6 +85,6 @@ resource secret1 'Microsoft.KeyVault/vaults/secrets@2023-02-01' = {
 //There should be key vault module; Chabi1 = Succeeded
 //check the access policies in the left hand menu
 
-//to Restore the soft-deleted Key Vault
+//to Restore the soft-deleted Key Vault, but make sure the resource group is created already
 //az keyvault recover --name 'Chabi1' --resource-group cloud11_project
 
