@@ -17,6 +17,22 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
   }
 }
 
+resource blobService 'Microsoft.Storage/storageAccounts/blobServices@2021-06-01' = {
+  parent: storageAccount
+  name: 'default'
+}
+
+// Create container
+resource storageContainer 'Microsoft.Storage/storageAccounts/blobServices/containers@2021-06-01' = {
+  name: 'deplpoymentscripts'
+  parent: blobService
+  properties: {
+    publicAccess: 'None'
+    metadata: {}
+  }
+}
+
+
 output location string = location // Output location for reference
 output storageAccountName string = storageAccountName // Output storageAccountName for reference
 

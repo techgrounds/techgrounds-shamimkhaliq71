@@ -1,19 +1,12 @@
 //discription of location
 param location string = 'westeurope'
 
-//description of name for vnet1
-param vnet1Name string = 'App_vnet1'
-
-//description of name for subnet1
-param subnet1Name string = 'App_subnet1'
-
-//description of name for nsg1
-param nsg1Name string = 'nsg1'
-
 //discription of Virtual machine name and VM size
 param vmName string = 'WebServerVM' 
 param vmSize string = 'Standard_DS2_v2'
 
+//description of subnet_id from vnet1
+param subnet1 string 
 
 //description('adminUserName')
 @secure()
@@ -54,7 +47,6 @@ var imageReference = {
   }
 }
 
-
 var publicIPAddressName = '${vmName}PublicIP'
 var networkInterfaceName = '${vmName}NetInt'
 var osDiskType = 'Standard_LRS'
@@ -71,58 +63,11 @@ var linuxConfiguration = {
   }
 }
 
-
-resource vnet1 'Microsoft.Network/virtualNetworks@2023-04-01' = {
-  name: vnet1Name
-  location:location
-  properties: {
-    addressSpace: {
-      addressPrefixes: [
-       '10.10.10.0/24'
-      ]
-    }
-  }
-}
-
-resource subnet1 'Microsoft.Network/virtualNetworks/subnets@2023-04-01' = {
-  parent:vnet1
-  name:subnet1Name
-  properties:{
-    addressPrefix: '10.10.10.0/24'
-    networkSecurityGroup:{
-      id:nsg1.id
-    }
-  }
-}
-
-resource nsg1 'Microsoft.Network/networkSecurityGroups@2023-04-01' = {
- location:location
-  name:nsg1Name
-  properties:{
-    securityRules:[
-      {
-        name: 'SSH'
-        properties: {
-          description: 'Allows SSH traffic'
-          protocol: 'Tcp'
-          sourcePortRange: '*'
-          destinationPortRange: '22'
-          sourceAddressPrefix: '*'
-          destinationAddressPrefix: '*'
-          access: 'Allow'
-          priority: 100
-          direction: 'Inbound'
-      }
-    }
-    ]
-  }
-}
-
 resource publicIPAddress 'Microsoft.Network/publicIPAddresses@2023-04-01' = {
   name: publicIPAddressName
   location: location
   sku: {
-    name: 'Basic'
+    name:'Basic'
   }
   properties: {
     publicIPAllocationMethod: 'Dynamic'
@@ -141,12 +86,12 @@ resource networkInterface 'Microsoft.Network/networkInterfaces@2023-04-01' = {
       {
         name: 'ipconfig1'
         properties: {
-          subnet: {
-            id:subnet1.id          }
           privateIPAllocationMethod: 'Dynamic'
           publicIPAddress: {
             id: publicIPAddress.id
           }
+          subnet: {
+            id: subnet1       }
         }
       }
     ]
@@ -195,7 +140,9 @@ resource vm_WebServer 'Microsoft.Compute/virtualMachines@2023-03-01' = {
 
 
 
-//open bash terminal >> login to Azure (az login)
+
+
+    //open bash terminal >> login to Azure (az login)
 
 //set up or select subscription 
 //az account set --subscription 'Cloud Student 10'

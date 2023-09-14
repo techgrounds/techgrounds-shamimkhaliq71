@@ -79,7 +79,7 @@ resource secret1 'Microsoft.KeyVault/vaults/secrets@2023-02-01' = {
 //check if you have selected the right path (cd Modules)
 
 //az deployment group create --template-file keyvault.bicep --resource-group cloud11_project --parameters location='westeurope'
-//you need to provide securestring value for 'pass' (? for help):
+//you need to provide securestring value for 'pass' (? for help): 
 
 //check in Azure portal under resource groups(cloud11_project)  
 //There should be key vault module; Chabi1 = Succeeded

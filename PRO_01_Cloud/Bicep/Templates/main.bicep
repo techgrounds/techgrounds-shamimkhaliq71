@@ -13,11 +13,6 @@ param storageAccountName string
 @secure()
 param pass string 
 
-//discription of resource names Man_vnet2
-param vnet2Name string
-param subnet2Name string
-param nsg2Name string
-
 //discription of Webserver
 //description('adminUserName')
 @secure()
@@ -27,14 +22,7 @@ param adminUsername string
 @secure()
 param adminPasswordOrKey string
 
-//Reference the parameters module
-module parametersModule './Modules/parameters.bicep' = {
-  name: 'parametersModule'
-  params:{
-    location: location
-  }
-  
-}
+
 
 //Reference the storage account module
 module storageAccountModule './Modules/storageaccount.bicep' = {
@@ -55,28 +43,27 @@ module keyvaultModule 'Modules/keyvault.bicep' = {
 }
 }
 
-//Reference the Vnet2 module
-module Vnet2Module  'Modules/management_vnet2.bicep' = {
-  name:'Vnet2Modeule'
-  params:{
-    Location: location 
-    vnet2Name: vnet2Name
-    subnet2Name: subnet2Name
-    nsg2Name: nsg2Name
+//Reference MyVnetworModule 
+module MyVnetworkModule 'Modules/MyVnetwork.bicep' = {
+  name: 'MyVnetworkModule'
+  params: {
+    location: location
+    vnet1Name: 'vNet1'
+    vnet2Name: 'vNet2'
   }
 }
+
 
 //Reference the Webserver and relating resources
 module WebserverModule 'Modules/Webserver.bicep' = {
   name: 'WebserverModule'
   params: {
     location:location
+    subnet1:MyVnetworkModule.outputs.subnet1
     adminPasswordOrKey:adminPasswordOrKey 
     adminUsername:adminUsername
   }
 }
-
-
 
 
 //open bash terminal >> login to Azure (az login)
@@ -86,10 +73,17 @@ module WebserverModule 'Modules/Webserver.bicep' = {
 //create or check if there's a resource group available(cloud11_project)
 //az group create --name cloud11_project --location westeurope
 
+//Restore the soft-deleted Key Vault, but make sure the resource group is created already
+//az keyvault recover --name 'Chabi1' --resource-group cloud11_project
+
 //Deploy everything from main file
 //check if you have selected the right path (cd Templates or cd .. to go up a directory)
 
 //az deployment group create --template-file main.bicep --resource-group cloud11_project
+//Please provide string value for 'storageAccountName' (? for help): 
+//Please provide securestring value for 'pass' (? for help): 
+//Please provide securestring value for 'adminUsername' (? for help): 
+//Please provide securestring value for 'adminPasswordOrKey' (? for help): 
 
 //check in Azure portal
 
