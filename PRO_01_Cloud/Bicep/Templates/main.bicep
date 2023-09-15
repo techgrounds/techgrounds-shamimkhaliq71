@@ -13,17 +13,15 @@ param storageAccountName string
 @secure()
 param pass string 
 
-//discription of Webserver
-//description('adminUserName')
+//discription of Webserver login
+//description of WebUserName
 @secure()
-param adminUsername string
+param WebUsername string
 
-//description('Admin_PW')
+//description of Web password
 @secure()
-param adminPasswordOrKey string
-
-
-
+param WebPasswordOrKey string
+ 
 //Reference the storage account module
 module storageAccountModule './Modules/storageaccount.bicep' = {
   name: 'storageAccountModule'
@@ -50,8 +48,8 @@ module MyVnetworkModule 'Modules/MyVnetwork.bicep' = {
     location: location
     vnet1Name: 'vNet1'
     vnet2Name: 'vNet2'
+    }
   }
-}
 
 
 //Reference the Webserver and relating resources
@@ -60,8 +58,8 @@ module WebserverModule 'Modules/Webserver.bicep' = {
   params: {
     location:location
     subnet1:MyVnetworkModule.outputs.subnet1
-    adminPasswordOrKey:adminPasswordOrKey 
-    adminUsername:adminUsername
+    WebPasswordOrKey:WebPasswordOrKey
+    WebUsername:WebUsername
   }
 }
 

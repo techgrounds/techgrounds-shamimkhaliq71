@@ -8,13 +8,13 @@ param vmSize string = 'Standard_DS2_v2'
 //description of subnet_id from vnet1
 param subnet1 string 
 
-//description('adminUserName')
+//descriptionof WebUserName
 @secure()
-param adminUsername string
+param WebUsername string
 
-//description('Admin_PW')
+//description Web password
 @secure()
-param adminPasswordOrKey string
+param WebPasswordOrKey string
 
 //description of type of authentication to use on the Virtual Machine. SSH key is recommended.
 @allowed([
@@ -56,8 +56,8 @@ var linuxConfiguration = {
   ssh: {
     publicKeys: [
       {
-        path: '/home/${adminUsername}/.ssh/authorized_keys'
-        keyData: adminPasswordOrKey
+        path: '/home/${WebUsername}/.ssh/authorized_keys'
+        keyData: WebPasswordOrKey
       }
     ]
   }
@@ -119,8 +119,8 @@ resource vm_WebServer 'Microsoft.Compute/virtualMachines@2023-03-01' = {
       }
       osProfile: {
         computerName: vmName
-        adminUsername: adminUsername
-        adminPassword: adminPasswordOrKey
+        adminUsername: WebUsername
+        adminPassword: WebPasswordOrKey
         linuxConfiguration: ((authenticationType == 'password') ? null : linuxConfiguration)
       }
       networkProfile: {
