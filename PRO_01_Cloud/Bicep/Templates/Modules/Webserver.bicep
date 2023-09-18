@@ -5,6 +5,7 @@ param location string = 'westeurope'
 param vmName string = 'WebServerVM' 
 param vmSize string = 'Standard_DS2_v2'
 
+
 //description of subnet_id from vnet1
 param subnet1 string 
 
@@ -78,27 +79,7 @@ resource publicIPAddress 'Microsoft.Network/publicIPAddresses@2023-04-01' = {
     idleTimeoutInMinutes: 4
   }
 }
-resource networkInterface 'Microsoft.Network/networkInterfaces@2023-04-01' = {
-  name: networkInterfaceName
-  location: location
-  properties: {
-    ipConfigurations: [
-      {
-        name: 'ipconfig1'
-        properties: {
-          subnet: {
-            id: subnet1       }
-          privateIPAllocationMethod: 'Dynamic'
-          publicIPAddress: {
-            id: publicIPAddress.id
-          } 
-        }
-      }
-    ]
 
-    
-  }
-}
 
 //description of VM_WebServer
 resource vm_WebServer 'Microsoft.Compute/virtualMachines@2023-03-01' = {
@@ -132,13 +113,31 @@ resource vm_WebServer 'Microsoft.Compute/virtualMachines@2023-03-01' = {
             }
           }
         ]
-      }
-      
-        
+      }  
       }
     }
 
-
+    resource networkInterface 'Microsoft.Network/networkInterfaces@2023-04-01' = {
+      name: networkInterfaceName
+      location: location
+      properties: {
+        ipConfigurations: [
+          {
+            name: 'ipconfig1'
+            properties: {
+              subnet: {
+                id: subnet1       } 
+              privateIPAllocationMethod: 'Dynamic'
+              publicIPAddress: {
+                id: publicIPAddress.id
+              } 
+            }
+          }
+        ]
+    
+        
+      }
+    }
 
 
 

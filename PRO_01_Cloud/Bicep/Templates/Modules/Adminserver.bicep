@@ -15,12 +15,6 @@ param AdminUName string
 @secure()
 param AdminPW string 
 
-//description Zone number for the virtual machine
-@allowed([
-  '1'
-])
-param zone string = '1'
-
 
 //description of subnet_id from vnet2
 param subnet2 string 
@@ -29,7 +23,7 @@ param subnet2 string
 //description of Unique DNS Name for the Public IP used to access the Virtual Machine.
 param dnsLabelPrefix string = toLower('${AdminVmName}-${uniqueString(resourceGroup().id)}')
 
-var virtualMachineName = 'VM-Adminserver'
+
 var networkInterfaceName = '${AdminUName}NetInt'
 var osDiskType = 'Standard_LRS'
 var publicIPAddressName = '${AdminVmName}PublicIP'
@@ -39,9 +33,6 @@ var publicIPAddressName = '${AdminVmName}PublicIP'
 resource publicIPAddress 'Microsoft.Network/publicIPAddresses@2023-04-01' = {
   name: publicIPAddressName
   location: location
-  zones: [
-    zone
-  ]
   sku: {
     name: 'Standard'
   }
@@ -56,14 +47,9 @@ resource publicIPAddress 'Microsoft.Network/publicIPAddresses@2023-04-01' = {
 }
 
 
-
-
 resource adminServer 'Microsoft.Compute/virtualMachines@2023-03-01' = {
-  name: virtualMachineName
+  name:AdminVmName
   location: location
-  zones: [
-    zone
-  ]
   properties: {
     hardwareProfile: {
       vmSize:AdminVmSize
@@ -110,7 +96,7 @@ resource networkInterface 'Microsoft.Network/networkInterfaces@2023-04-01' = {
         name: 'ipconfig2'
         properties: {
           subnet: {
-            id: subnet2           }
+            id: subnet2           } 
           privateIPAllocationMethod: 'Dynamic'
           publicIPAddress: {
             id: publicIPAddress.id
@@ -134,5 +120,3 @@ resource networkInterface 'Microsoft.Network/networkInterfaces@2023-04-01' = {
 //check if you have selected the right path (cd Modules)
 
 //az deployment group create --template-file Adminserver.bicep --resource-group cloud11_project --parameters location='westeurope'
-
-// /subscriptions/cf93fb64-f800-4fc9-a2c1-a37d01b31869//Cloud11_project/providers/Microsoft.Network/virtualNetworks/myVirtualNetwork/subnets/mySubnet

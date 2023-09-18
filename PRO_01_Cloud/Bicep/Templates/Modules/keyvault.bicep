@@ -76,6 +76,9 @@ resource secret1 'Microsoft.KeyVault/vaults/secrets@2023-02-01' = {
 //create or check if there's a resource group available(cloud11_project)
 //az group create --name cloud11_project --location westeurope
 
+//to Restore the soft-deleted Key Vault, but make sure the resource group is created already
+//az keyvault recover --name 'Chabi1' --resource-group cloud11_project
+
 //check if you have selected the right path (cd Modules)
 
 //az deployment group create --template-file keyvault.bicep --resource-group cloud11_project --parameters location='westeurope'
@@ -85,6 +88,5 @@ resource secret1 'Microsoft.KeyVault/vaults/secrets@2023-02-01' = {
 //There should be key vault module; Chabi1 = Succeeded
 //check the access policies in the left hand menu
 
-//to Restore the soft-deleted Key Vault, but make sure the resource group is created already
-//az keyvault recover --name 'Chabi1' --resource-group cloud11_project
+
 

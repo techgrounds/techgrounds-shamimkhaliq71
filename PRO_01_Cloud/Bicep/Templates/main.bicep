@@ -22,6 +22,7 @@ param WebUsername string
 @secure()
 param WebPasswordOrKey string
 
+
 //description of Username admin
 @secure()
 param AdminUName string 
@@ -74,7 +75,7 @@ module WebserverModule 'Modules/Webserver.bicep' = {
   }
 }
 
-//Reference the Adminserverand relating resources
+//Reference the Adminserver and relating resources
 module AdminserverModule 'Modules/Adminserver.bicep' = {
   name: 'AdminserverModule'   
   params:{
@@ -103,10 +104,12 @@ module AdminserverModule 'Modules/Adminserver.bicep' = {
 //check if you have selected the right path (cd Templates or cd .. to go up a directory)
 
 //az deployment group create --template-file main.bicep --resource-group cloud11_project
-//Please provide string value for 'storageAccountName' (? for help): 
+//Please provide string value for 'storageAccountName' (? for help): lily1
 //Please provide securestring value for 'pass' (? for help): 
-//Please provide securestring value for 'adminUsername' (? for help): 
-//Please provide securestring value for 'adminPasswordOrKey' (? for help): 
+//Please provide securestring value for 'WebUsername' (? for help): 
+//Please provide securestring value for 'WebPasswordOrKey' (? for help): 
+//Please provide securestring value for 'AdminUName' (? for help): 
+//Please provide securestring value for 'AdminPW' (? for help): 
 
 //check in Azure portal
 
