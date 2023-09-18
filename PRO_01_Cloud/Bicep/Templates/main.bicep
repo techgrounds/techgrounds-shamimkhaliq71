@@ -21,6 +21,17 @@ param WebUsername string
 //description of Web password
 @secure()
 param WebPasswordOrKey string
+
+//description of Username admin
+@secure()
+param AdminUName string 
+
+
+//description of Managemnt password
+@secure()
+param AdminPW string 
+
+
  
 //Reference the storage account module
 module storageAccountModule './Modules/storageaccount.bicep' = {
@@ -58,10 +69,24 @@ module WebserverModule 'Modules/Webserver.bicep' = {
   params: {
     location:location
     subnet1:MyVnetworkModule.outputs.subnet1
-    WebPasswordOrKey:WebPasswordOrKey
     WebUsername:WebUsername
+    WebPasswordOrKey:WebPasswordOrKey
   }
 }
+
+//Reference the Adminserverand relating resources
+module AdminserverModule 'Modules/Adminserver.bicep' = {
+  name: 'AdminserverModule'   
+  params:{
+    location:location
+    subnet2:MyVnetworkModule.outputs.subnet2
+    AdminUName:AdminUName
+    AdminPW:AdminPW
+  }
+}
+
+
+
 
 
 //open bash terminal >> login to Azure (az login)

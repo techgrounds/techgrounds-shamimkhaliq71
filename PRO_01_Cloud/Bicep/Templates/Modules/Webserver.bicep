@@ -86,12 +86,12 @@ resource networkInterface 'Microsoft.Network/networkInterfaces@2023-04-01' = {
       {
         name: 'ipconfig1'
         properties: {
+          subnet: {
+            id: subnet1       }
           privateIPAllocationMethod: 'Dynamic'
           publicIPAddress: {
             id: publicIPAddress.id
-          }
-          subnet: {
-            id: subnet1       }
+          } 
         }
       }
     ]

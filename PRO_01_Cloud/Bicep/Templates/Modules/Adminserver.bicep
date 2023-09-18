@@ -5,37 +5,48 @@ param location string = resourceGroup().location
 param AdminVmName string = 'adminserver'
 param AdminVmSize string = 'Standard_B1ls'
 
-//description of Username-management
+
+//description of Username admin
 @secure()
-param adminUName string 
+param AdminUName string 
+
 
 //description of Managemnt password
 @secure()
-param adminPW string 
+param AdminPW string 
+
+//description Zone number for the virtual machine
+@allowed([
+  '1'
+])
+param zone string = '1'
 
 
 //description of subnet_id from vnet2
-param subnetId string 
+param subnet2 string 
+
 
 //description of Unique DNS Name for the Public IP used to access the Virtual Machine.
 param dnsLabelPrefix string = toLower('${AdminVmName}-${uniqueString(resourceGroup().id)}')
 
-var virtualMachineName = 'AdminserverVM'
-
-
-var networkInterfaceName = '${adminUName}NetInt'
+var virtualMachineName = 'VM-Adminserver'
+var networkInterfaceName = '${AdminUName}NetInt'
 var osDiskType = 'Standard_LRS'
 var publicIPAddressName = '${AdminVmName}PublicIP'
+
 
 
 resource publicIPAddress 'Microsoft.Network/publicIPAddresses@2023-04-01' = {
   name: publicIPAddressName
   location: location
+  zones: [
+    zone
+  ]
   sku: {
-    name: 'Basic'
+    name: 'Standard'
   }
   properties: {
-    publicIPAllocationMethod: 'Dynamic'
+    publicIPAllocationMethod: 'Static'
     publicIPAddressVersion: 'IPv4'
     dnsSettings: {
       domainNameLabel: dnsLabelPrefix
@@ -45,12 +56,17 @@ resource publicIPAddress 'Microsoft.Network/publicIPAddresses@2023-04-01' = {
 }
 
 
+
+
 resource adminServer 'Microsoft.Compute/virtualMachines@2023-03-01' = {
   name: virtualMachineName
   location: location
+  zones: [
+    zone
+  ]
   properties: {
     hardwareProfile: {
-      vmSize: AdminVmSize
+      vmSize:AdminVmSize
     }
     storageProfile: {
       osDisk: {
@@ -67,9 +83,9 @@ resource adminServer 'Microsoft.Compute/virtualMachines@2023-03-01' = {
         }
       }
       osProfile: {
-        computerName: AdminVmName
-        adminUsername: adminUName
-        adminPassword: adminPW
+        computerName:AdminVmName
+        adminUsername:AdminUName
+        adminPassword:AdminPW
       }
       networkProfile: {
         networkInterfaces: [
@@ -80,9 +96,7 @@ resource adminServer 'Microsoft.Compute/virtualMachines@2023-03-01' = {
             }
           }
         ]
-      }
-      
-        
+      }        
       }
     }
 
@@ -96,7 +110,7 @@ resource networkInterface 'Microsoft.Network/networkInterfaces@2023-04-01' = {
         name: 'ipconfig2'
         properties: {
           subnet: {
-            id: subnetId           }
+            id: subnet2           }
           privateIPAllocationMethod: 'Dynamic'
           publicIPAddress: {
             id: publicIPAddress.id
@@ -119,4 +133,6 @@ resource networkInterface 'Microsoft.Network/networkInterfaces@2023-04-01' = {
 
 //check if you have selected the right path (cd Modules)
 
-//az deployment group create --template-file Adminerver.bicep --resource-group cloud11_project --parameters location='westeurope'
+//az deployment group create --template-file Adminserver.bicep --resource-group cloud11_project --parameters location='westeurope'
+
+// /subscriptions/cf93fb64-f800-4fc9-a2c1-a37d01b31869//Cloud11_project/providers/Microsoft.Network/virtualNetworks/myVirtualNetwork/subnets/mySubnet
