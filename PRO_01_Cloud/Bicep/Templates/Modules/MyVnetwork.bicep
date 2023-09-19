@@ -47,12 +47,12 @@ resource nsg_2 'Microsoft.Network/networkSecurityGroups@2023-04-01' = {
   properties: {
     securityRules: [
       {
-        name: 'SSH'
+        name: 'RDP'
         properties: {
-          description: 'Allows SSH traffic'
+          description: 'Allows RDP traffic'
           protocol: 'Tcp'
           sourcePortRange: '*'
-          destinationPortRange: '22'
+          destinationPortRange: '3389'
           sourceAddressPrefix: '*'
           destinationAddressPrefix: '*'
           access: 'Allow'

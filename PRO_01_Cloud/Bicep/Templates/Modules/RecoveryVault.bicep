@@ -1,14 +1,8 @@
+//description of Location of the resources
 param location string = resourceGroup().location
 
 //description of Name of Vault
 param vaultName string = 'SosVault-${uniqueString(resourceGroup().id)}'
-
-//description of Change Vault Storage Type (Works if vault has not registered any backup instance)')
-// @allowed([
-//   'LocallyRedundant'
-//   'GeoRedundant'
-// ])
-// // param vaultStorageType string = 'LocallyRedundant'
 
 var skuName = 'RS0'
 var skuTier = 'Standard'
