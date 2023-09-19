@@ -10,17 +10,42 @@ param tenantID string = 'de60b253-74bd-4365-b598-b9e55a2b208d'
 //discription of objectID
 param objectID string = 'a04a1d40-0b09-48f7-91a7-d32abf5a1e31'
 
-//discription of secret1
+//description of name of secret
+param secretName string = 'secret1'
+
+//discription of secret value
 @secure()
 param pass string 
+
+//description of whether the key vault is a standard vault or a premium vault.
+@allowed([
+  'standard'
+  'premium'
+])
+param skuName string = 'standard'
 
 resource keyvault 'Microsoft.KeyVault/vaults@2023-02-01' = {
   name:keyVaultName
   location: location
   properties: {
+    enabledForDeployment: true
+    enabledForDiskEncryption: true
+    enabledForTemplateDeployment: true
+    enableSoftDelete: true
+    enablePurgeProtection: true
+    publicNetworkAccess: 'Disabled'
+    networkAcls: {
+      bypass:'AzureServices'
+      defaultAction:'Allow'
+      ipRules: [
+        {
+          value:'62.195.243.60' //local  public IP address
+        }
+      ]
+    }
     sku: {
       family: 'A'
-      name: 'standard'
+      name: skuName
     }
     tenantId: tenantID
     accessPolicies: [
@@ -63,11 +88,14 @@ objectId: objectID
 //adding a secret to the keyvault
 resource secret1 'Microsoft.KeyVault/vaults/secrets@2023-02-01' = {
   parent: keyvault
-  name: 'adminpass1' 
+  name: secretName 
   properties: { 
     value: pass
   }
 }
+
+output keyVaultName string =keyVaultName
+output secret1 string = secretName
 
 //open bash terminal >> login to Azure (az login)
 

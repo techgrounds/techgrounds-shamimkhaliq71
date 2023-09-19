@@ -1,6 +1,5 @@
 
-// main.bicep
-
+// main.bicep(test)
 
 //discription of location 
 param location string = 'westeurope'
