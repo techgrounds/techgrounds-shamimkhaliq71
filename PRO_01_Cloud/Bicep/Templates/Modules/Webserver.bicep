@@ -102,6 +102,7 @@ resource vm_WebServer 'Microsoft.Compute/virtualMachines@2023-03-01' = {
         computerName: vmName
         adminUsername: WebUsername
         adminPassword: WebPasswordOrKey
+        customData: loadFileAsBase64('customdata.sh')
         linuxConfiguration: ((authenticationType == 'password') ? null : linuxConfiguration)
       }
       networkProfile: {

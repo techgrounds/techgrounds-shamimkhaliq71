@@ -2,7 +2,7 @@
 param location string = resourceGroup().location
 
 //discription of Virtual machine name and VM size
-param AdminVmName string = 'adminserver'
+param AdminVmName string = 'AdminserverVM'
 param AdminVmSize string = 'Standard_B2s'
 
 

@@ -2,24 +2,24 @@
 param location string = resourceGroup().location
 
 //description of Name for vNet 1
-param vnet1Name string = 'vNet1'
+param vnet1Name string = 'WebVnet1'
 
 //description of Name for vNet 2
-param vnet2Name string = 'vNet2'
+param vnet2Name string = 'AdminVnet2'
 
 var vnet1Config = {
   addressSpacePrefix: '10.10.10.0/24'
-  subnetName: 'subnet1'
+  subnetName: 'Websubnet1'
   subnetPrefix: '10.10.10.0/24'
 }
 var vnet2Config = {
   addressSpacePrefix: '10.20.20.0/24'
-  subnetName: 'subnet2'
+  subnetName: 'Websubnet2'
   subnetPrefix: '10.20.20.0/24'
 }
 
 resource nsg_1 'Microsoft.Network/networkSecurityGroups@2023-04-01' = {
-  name: 'nsg_1'
+  name: 'Webnsg_1'
   location: location
   properties: {
     securityRules: [
@@ -37,12 +37,25 @@ resource nsg_1 'Microsoft.Network/networkSecurityGroups@2023-04-01' = {
           direction: 'Inbound'
         }
       }
-    ]
+{
+name: 'httpForWebserver'
+properties: {
+  protocol: 'Tcp'
+  sourcePortRange: '*'
+  destinationPortRange: '80'
+  sourceAddressPrefix: '*'
+  destinationAddressPrefix: '*'
+  access: 'Allow'
+  priority: 101
+  direction: 'Inbound'
+}
+}
+]
   }
 }
 
 resource nsg_2 'Microsoft.Network/networkSecurityGroups@2023-04-01' = {
-  name: 'nsg_2'
+  name: 'Adminnsg_2'
   location: location
   properties: {
     securityRules: [
