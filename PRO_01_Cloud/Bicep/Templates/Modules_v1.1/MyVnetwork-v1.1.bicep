@@ -163,3 +163,5 @@ output subnet1 string = Webvnet1.properties.subnets[0].id
 output subnet2 string = Adminvnet2.properties.subnets[0].id
 
 
+
+

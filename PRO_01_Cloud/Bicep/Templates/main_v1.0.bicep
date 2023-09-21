@@ -66,7 +66,7 @@ module MyVnetworkModule 'Modules_v1.0/MyVnetwork.bicep' = {
   params: {
     location: location
     vnet1Name: 'WebvNet1'
-    vnet2Name: 'AminVnet2'
+    vnet2Name: 'AdminVnet2'
     }
   }
 

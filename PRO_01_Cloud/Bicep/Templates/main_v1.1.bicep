@@ -34,7 +34,7 @@ param AdminPW string
 
 
 //Reference the storage account module
-module storageAccountModule './Modules/storageaccount.bicep' = {
+module storageAccountModule 'Modules_v1.1/storageaccount.bicep' = {
   name: 'storageAccountModule'
   params: {
     location: location
@@ -43,7 +43,7 @@ module storageAccountModule './Modules/storageaccount.bicep' = {
 }
 
 //Reference to keyvault module
-module keyvaultModule 'Modules/keyvault.bicep' = {
+module keyvaultModule 'Modules_v1.1/keyvault.bicep' = {
   name: 'keyvaultModule'
  // Other module properties
  params: {
@@ -53,7 +53,7 @@ module keyvaultModule 'Modules/keyvault.bicep' = {
 }
 
 //Reference to Recovery vault module
-module RecoveryVaultModule 'Modules/RecoveryVault.bicep' = {
+module RecoveryVaultModule 'Modules_v1.1/RecoveryVault.bicep' = {
   name: 'ReccoveryVaultModule'
   params: {
     location:location
@@ -61,18 +61,18 @@ module RecoveryVaultModule 'Modules/RecoveryVault.bicep' = {
 }
 
 //Reference to MyVnetworModule 
-module MyVnetworkModule 'Modules/MyVnetwork.bicep' = {
+module MyVnetworkModule 'Modules_v1.1/MyVnetwork-v1.1.bicep' = {
   name: 'MyVnetworkModule'
   params: {
     location: location
-    vnet1Name: 'vNet1'
-    vnet2Name: 'vNet2'
+    vnet1Name: 'WebVnet1'
+    vnet2Name: 'AdminVnet2'
     }
   }
 
 
 //Reference to Webserver and relating resources
-module WebserverModule 'Modules/Webserver.bicep' = {
+module WebserverModule 'Modules_v1.1/Webserver-v1.1.bicep' = {
   name: 'WebserverModule'
   params: {
     location:location
@@ -83,7 +83,7 @@ module WebserverModule 'Modules/Webserver.bicep' = {
 }
 
 //Reference to Adminserver and relating resources
-module AdminserverModule 'Modules/Adminserver.bicep' = {
+module AdminserverModule 'Modules_v1.1/Adminserver.bicep' = {
   name: 'AdminserverModule'   
   params:{
     location:location

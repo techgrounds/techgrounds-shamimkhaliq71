@@ -150,17 +150,6 @@ resource vm_WebServer 'Microsoft.Compute/virtualMachines@2023-03-01' = {
 //az deployment group create --template-file Webserver.bicep --resource-group cloud11_project --parameters location='westeurope'
 
 
-//First you need to set the right path;
-//PS C:\Users\TechGrounds\Desktop\techgrounds-shamimkhaliq71> ssh mimzy@104.40.205.242
-
-//Once the VM is deployed, you can SSH into it using the SSH key you provided in the template. 
-//If you specified an SSH key for authentication, follow these steps: 
-//Replace <admin-username> with the username you specified in the ARM template 
-//and <public-ip> with the public IP address of the VM.(ssh mimzy@104.40.205.242)
-
-//You need to provide the password for the usersname (mimzy)
-//mimzy@104.40.205.242's password: 
-//Welcome to Ubuntu 18.04.6 LTS (GNU/Linux 5.4.0-1109-azure x86_64).....
 
 
 
