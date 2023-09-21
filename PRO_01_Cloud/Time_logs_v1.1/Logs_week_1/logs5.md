@@ -4,8 +4,4 @@ Log [22/09/23]
 
 Daily report
 
-
-Obstacles:
-
-
-Solutions:
+Not in Class today, due to company weekend.

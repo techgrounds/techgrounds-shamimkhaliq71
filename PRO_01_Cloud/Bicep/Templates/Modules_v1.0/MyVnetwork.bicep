@@ -14,11 +14,11 @@ var vnet1Config = {
 }
 var vnet2Config = {
   addressSpacePrefix: '10.20.20.0/24'
-  subnetName: 'Websubnet2'
+  subnetName: 'Adminsubnet2'
   subnetPrefix: '10.20.20.0/24'
 }
 
-resource nsg_1 'Microsoft.Network/networkSecurityGroups@2023-04-01' = {
+resource Webnsg_1 'Microsoft.Network/networkSecurityGroups@2023-04-01' = {
   name: 'Webnsg_1'
   location: location
   properties: {
@@ -54,7 +54,7 @@ properties: {
   }
 }
 
-resource nsg_2 'Microsoft.Network/networkSecurityGroups@2023-04-01' = {
+resource Adminnsg_2 'Microsoft.Network/networkSecurityGroups@2023-04-01' = {
   name: 'Adminnsg_2'
   location: location
   properties: {
@@ -78,7 +78,7 @@ resource nsg_2 'Microsoft.Network/networkSecurityGroups@2023-04-01' = {
 }
 
 
-resource vnet1 'Microsoft.Network/virtualNetworks@2023-04-01' = {
+resource Webvnet1 'Microsoft.Network/virtualNetworks@2023-04-01' = {
   name: vnet1Name
   location: location
   properties: {
@@ -93,7 +93,7 @@ resource vnet1 'Microsoft.Network/virtualNetworks@2023-04-01' = {
         properties: {
           addressPrefix: vnet1Config.subnetPrefix
           networkSecurityGroup: {
-            id: nsg_1.id
+            id: Webnsg_1.id
           }
         }
         type: 'Microsoft.Network/virtualNetworks/subnets'
@@ -103,7 +103,7 @@ resource vnet1 'Microsoft.Network/virtualNetworks@2023-04-01' = {
 }
 
 
-resource vnet2 'Microsoft.Network/virtualNetworks@2023-04-01' = {
+resource Adminvnet2 'Microsoft.Network/virtualNetworks@2023-04-01' = {
   name: vnet2Name
   location: location
   properties: {
@@ -118,7 +118,7 @@ resource vnet2 'Microsoft.Network/virtualNetworks@2023-04-01' = {
         properties: {
           addressPrefix: vnet2Config.subnetPrefix
           networkSecurityGroup: {
-            id: nsg_2.id
+            id: Adminnsg_2.id
           }
         }
       }
@@ -127,7 +127,7 @@ resource vnet2 'Microsoft.Network/virtualNetworks@2023-04-01' = {
 }
 
 resource VnetPeering1 'Microsoft.Network/virtualNetworks/virtualNetworkPeerings@2023-04-01' = {
-  parent: vnet1
+  parent: Webvnet1
   name: '${vnet1Name}-${vnet2Name}'
   properties: {
     allowVirtualNetworkAccess: true
@@ -135,13 +135,13 @@ resource VnetPeering1 'Microsoft.Network/virtualNetworks/virtualNetworkPeerings@
     allowGatewayTransit: false
     useRemoteGateways: false
     remoteVirtualNetwork: {
-      id: vnet2.id
+      id: Adminvnet2.id
     }
   }
 }
 
 resource vnetPeering2 'Microsoft.Network/virtualNetworks/virtualNetworkPeerings@2023-04-01' = {
-  parent: vnet2
+  parent: Adminvnet2
   name: '${vnet2Name}-${vnet1Name}'
   properties: {
     allowVirtualNetworkAccess: true
@@ -149,17 +149,17 @@ resource vnetPeering2 'Microsoft.Network/virtualNetworks/virtualNetworkPeerings@
     allowGatewayTransit: false
     useRemoteGateways: false
     remoteVirtualNetwork: {
-      id: vnet1.id
+      id: Webvnet1.id
     }
   }
 }
 
 
-output vnet1_id string = vnet1.id
-output vnet2_id string = vnet2.id
-output nsg1_id string = nsg_1.id
-output nsg2_id string = nsg_2.id
-output subnet1 string = vnet1.properties.subnets[0].id
-output subnet2 string = vnet2.properties.subnets[0].id
+output vnet1_id string = Webvnet1.id
+output vnet2_id string = Adminvnet2.id
+output nsg1_id string = Webnsg_1.id
+output nsg2_id string = Adminnsg_2.id
+output subnet1 string = Webvnet1.properties.subnets[0].id
+output subnet2 string = Adminvnet2.properties.subnets[0].id
 
 
