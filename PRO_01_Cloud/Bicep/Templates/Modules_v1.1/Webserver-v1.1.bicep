@@ -24,8 +24,7 @@ param WebPasswordOrKey string
 ])
 param authenticationType string = 'password'
 
-//description of Unique DNS Name for the Public IP used to access the Virtual Machine.
-param dnsLabelPrefix string = toLower('${vmName}-${uniqueString(resourceGroup().id)}')
+
 
 var imageReference = {
   'Ubuntu-1804': {
@@ -48,7 +47,7 @@ var imageReference = {
   }
 }
 
-var publicIPAddressName = '${vmName}PublicIP'
+
 var networkInterfaceName = '${vmName}NetInt'
 var osDiskType = 'Standard_LRS'
 
@@ -61,22 +60,6 @@ var linuxConfiguration = {
         keyData: WebPasswordOrKey
       }
     ]
-  }
-}
-
-resource publicIPAddress 'Microsoft.Network/publicIPAddresses@2023-04-01' = {
-  name: publicIPAddressName
-  location: location
-  sku: {
-    name:'Basic'
-  }
-  properties: {
-    publicIPAllocationMethod: 'Dynamic'
-    publicIPAddressVersion: 'IPv4'
-    dnsSettings: {
-      domainNameLabel: dnsLabelPrefix
-    }
-    idleTimeoutInMinutes: 4
   }
 }
 
@@ -129,9 +112,7 @@ resource vm_WebServer 'Microsoft.Compute/virtualMachines@2023-03-01' = {
               subnet: {
                 id: subnet1       } 
               privateIPAllocationMethod: 'Dynamic'
-              publicIPAddress: {
-                id: publicIPAddress.id
-              } 
+             
             }
           }
         ]
