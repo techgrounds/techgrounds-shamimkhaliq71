@@ -1,8 +1,11 @@
-//discription of the name of the key vault.
+///discription of the name of the key vault.
 param keyVaultName string = 'Chabi1'
 
 //discription of location
 param location string = resourceGroup().location
+
+//description of the managed identity
+param managed_id string = 'userIDx${uniqueString(resourceGroup().id)}'
 
 //discription of tenantID
 param tenantID string = 'de60b253-74bd-4365-b598-b9e55a2b208d'
@@ -28,11 +31,17 @@ resource keyvault 'Microsoft.KeyVault/vaults@2023-02-01' = {
   name:keyVaultName
   location: location
   properties: {
+    sku: {
+      family: 'A'
+      name: skuName
+    }
     enabledForDeployment: true
     enabledForDiskEncryption: true
     enabledForTemplateDeployment: true
+    enableRbacAuthorization: false  
+    enablePurgeProtection: true 
     enableSoftDelete: true
-    enablePurgeProtection: true
+    softDeleteRetentionInDays: 7
     publicNetworkAccess: 'Disabled'
     networkAcls: {
       bypass:'AzureServices'
@@ -43,46 +52,34 @@ resource keyvault 'Microsoft.KeyVault/vaults@2023-02-01' = {
         }
       ]
     }
-    sku: {
-      family: 'A'
-      name: skuName
-    }
+    
     tenantId: tenantID
     accessPolicies: [
-      { 
-        objectId: objectID
+      {
         tenantId: tenantID
-        permissions:{
-          secrets:[
-            'get'
-            'list'
-            'set' 
+        objectId: objectID    
+        permissions: {
+          secrets: [
+            'all'
+          ]
+          certificates: [
+            'all'
+          ]
+          keys: [
+            'all'
+          ]
+          storage: [
+            'all'
+          ]
+        }
+      }
     ]
   }
 }
-{
-objectId: objectID
-  tenantId: tenantID
-  permissions: {
-    certificates: [
-      'all'
-    ]
-  }
-}
-{
-objectId: objectID
-  tenantId: tenantID
-  permissions: {
-    keys: [
-      'create'
-      'delete'
-      'get'
-      'recover'
-    ]
-  }
-}
-]
-  }
+
+resource managedIdentity 'Microsoft.ManagedIdentity/userAssignedIdentities@2023-01-31' = {
+  name: managed_id
+  location: location
 }
 
 //adding a secret to the keyvault
@@ -94,7 +91,7 @@ resource secret1 'Microsoft.KeyVault/vaults/secrets@2023-02-01' = {
   }
 }
 
-output keyVaultName string =keyVaultName
+output keyVaultName string = keyVaultName
 output secret1 string = secretName
 
 //open bash terminal >> login to Azure (az login)

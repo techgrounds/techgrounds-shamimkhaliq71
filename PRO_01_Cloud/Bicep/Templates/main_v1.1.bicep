@@ -1,5 +1,5 @@
 
-// main.bicep
+// main_v1.1.bicep
 
 
 //discription of location 
@@ -12,6 +12,7 @@ param storageAccountName string
 //discription of secret1
 @secure()
 param pass string 
+param certpass string
 
 //discription of Webserver login
 //description of WebUserName
@@ -21,6 +22,14 @@ param WebUsername string
 //description of Web password
 @secure()
 param WebPasswordOrKey string
+
+//AppGateWay
+param applicationGateWayName string = 'applicationGateWay'
+
+//description of SSH Key or password for the Virtual Machine. SSH key is recommended.
+@secure()
+@minLength(6)
+param webadmin_password string 
 
 
 //description of Username admin
@@ -43,12 +52,14 @@ module storageAccountModule 'Modules_v1.1/storageaccount.bicep' = {
 }
 
 //Reference to keyvault module
-module keyvaultModule 'Modules_v1.1/keyvault.bicep' = {
+module keyvaultModule 'Modules_v1.1/keyvaultv1.1.bicep' = {
   name: 'keyvaultModule'
  // Other module properties
  params: {
   location: location 
   pass:pass
+  certpass:certpass
+  
 }
 }
 
@@ -82,6 +93,16 @@ module WebserverModule 'Modules_v1.1/Webserver-v1.1.bicep' = {
   }
 }
 
+//Reference to the AppGateway 
+module applicationGateWayModule 'Modules_v1.1/Scaleset_AG.bicep' = {
+  name: applicationGateWayName
+params:{
+  location:location
+  applicationGateWayName:applicationGateWayName
+  webadmin_password:webadmin_password
+}
+}
+
 //Reference to Adminserver and relating resources
 module AdminserverModule 'Modules_v1.1/Adminserver.bicep' = {
   name: 'AdminserverModule'   
@@ -110,13 +131,17 @@ module AdminserverModule 'Modules_v1.1/Adminserver.bicep' = {
 //Deploy everything from main file
 //check if you have selected the right path (cd Templates or cd .. to go up a directory)
 
-//az deployment group create --template-file main.bicep --resource-group cloud11_project
-//Please provide string value for 'storageAccountName' (? for help): lily1
-//Please provide securestring value for 'pass' (? for help): 
-//Please provide securestring value for 'WebUsername' (? for help): 
-//Please provide securestring value for 'WebPasswordOrKey' (? for help): 
-//Please provide securestring value for 'AdminUName' (? for help): 
-//Please provide securestring value for 'AdminPW' (? for help): 
+//az deployment group create --template-file main_v1.1.bicep --resource-group cloud11_project
 
+//Please provide string value for 'storageAccountName' (? for help): lily1
+//Please provide securestring value for 'pass' (? for help): adminpass1
+//Please provide string value for 'certpass' (? for help): certpass1
+//Please provide securestring value for 'WebUsername' (? for help): mimzy
+//Please provide securestring value for 'WebPasswordOrKey' (? for help): haseeb@03
+//Please provide securestring value for 'webadmin_password' (? for help): Haziq@2023
+//Please provide securestring value for 'AdminUName' (? for help): mimzy2
+//Please provide securestring value for 'AdminPW' (? for help): Haziq@2023
+
+ 
 //check in Azure portal
 
