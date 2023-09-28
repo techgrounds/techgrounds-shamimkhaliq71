@@ -94,7 +94,7 @@ module WebserverModule 'Modules_v1.1/Webserver-v1.1.bicep' = {
 }
 
 //Reference to the AppGateway 
-module applicationGateWayModule 'Modules_v1.1/Scaleset_AG.bicep' = {
+module applicationGateWayModule 'Modules_v1.1/AppGw_VMss.bicep' = {
   name: applicationGateWayName
 params:{
   location:location

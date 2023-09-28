@@ -109,8 +109,7 @@ For more information, see WebSocket support and HTTP/2 support.
 Connection draining helps you achieve graceful removal of backend pool members during planned service updates or problems with backend health. This setting is enabled via the Backend Setting and is applied to all backend pool members during rule creation. Once enabled, the application gateway ensures all deregistering instances of a backend pool don't receive any new requests while allowing existing requests to complete within a configured time limit. It applies to cases where backend instances are:
 
 explicitly removed from the backend pool after a configuration change by a user
-reported as unhealthy by the health probes, or
-removed during a scale-in operation
+reported as unhealthy by the health probes, or removed during a scale-in operation
 The only exception is when requests continue to be proxied to the deregistering instances because of gateway-managed session affinity.
 
 The connection draining is honored for WebSocket connections as well. Connection draining is invoked for every single update to the gateway. To prevent connection loss to existing members of the backend pool, make sure to enable connection draining.
@@ -220,6 +219,10 @@ You can configure application gateway to modify request and response headers and
 [https://learn.microsoft.com/en-us/azure/application-gateway/quick-create-bicep?tabs=CLI]
 
 [https://www.youtube.com/watch?v=B3O6bXu-NbM]
+
+[https://learn.microsoft.com/en-us/azure/application-gateway/application-gateway-probe-overview]
+
+
 
 
 

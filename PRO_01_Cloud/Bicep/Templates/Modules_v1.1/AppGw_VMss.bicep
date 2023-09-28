@@ -55,7 +55,7 @@ resource virtualNetwork_webapp 'Microsoft.Network/virtualNetworks@2021-05-01' = 
     }
     subnets: [
       {
-        name: 'myAGSubnet'
+        name: 'skAGSubnet'
         properties: {
           addressPrefix: appGatewaySubnetAddressPrefix
           privateEndpointNetworkPolicies: 'Enabled'
@@ -63,7 +63,7 @@ resource virtualNetwork_webapp 'Microsoft.Network/virtualNetworks@2021-05-01' = 
         }
       }
       {
-        name: 'myBackendSubnet'
+        name: 'skBackendSubnet'
         properties: {
           addressPrefix: backendSubnetAddressPrefix
           privateEndpointNetworkPolicies: 'Enabled'
@@ -92,23 +92,23 @@ resource applicationGateWay 'Microsoft.Network/applicationGateways@2021-05-01' =
         name: 'appGatewayIpConfig'
         properties: {
           subnet: {
-            id: resourceId('Microsoft.Network/virtualNetworks/subnets', virtualNetworkName, 'myAGSubnet')
+            id: resourceId('Microsoft.Network/virtualNetworks/subnets', virtualNetworkName, 'skAGSubnet')
           }
         }
       }
-    ]
-    frontendIPConfigurations: [
+    ] //This defines the configuration for the frontend IP address of the Application Gateway.
+    frontendIPConfigurations: [  
       {
         name: 'appGwPublicFrontendIp'
         properties: {
-          privateIPAllocationMethod: 'Dynamic'
-          publicIPAddress: {
+          privateIPAllocationMethod: 'Dynamic' //Azure will automatically assign a private IP address from the available pool.
+          publicIPAddress: {   //This link tells the Application Gateway to use the specified public IP address for incoming traffic.
             id: resourceId('Microsoft.Network/publicIPAddresses', '${publicIPAddressName}')
           }
         }
       }
     ]
-    frontendPorts: [
+    frontendPorts: [  //This section defines the frontend ports that the Application Gateway will listen on.
       {
         name: 'port_80'
         properties: {
@@ -116,77 +116,78 @@ resource applicationGateWay 'Microsoft.Network/applicationGateways@2021-05-01' =
         }
       }
     ]
-    backendAddressPools: [
+    backendAddressPools: [ //The backend address pool is a group of backend resources where the Application Gateway will route incoming requests to.
       {
-        name: 'myBackendPool'
+        name: 'skBackendPool'
         properties: {}
       }
     ]
-    backendHttpSettingsCollection: [
+    backendHttpSettingsCollection: [ //This section configures the HTTP settings for routing requests to the backend resources.
       {
-        name: 'myHTTPSetting'
+        name: 'skHTTPSetting'
         properties: {
-          port: 80
+          port: 80   //This specifies that the Application Gateway will send traffic to the backend resources on port 80.
           protocol: 'Http'
-          cookieBasedAffinity: 'Disabled'
+          cookieBasedAffinity: 'Disabled'  //This setting controls whether the Application Gateway uses cookies to maintain session affinity. 
+          //In this case, it's disabled, which means requests can be load-balanced to any backend server without considering cookies.
           pickHostNameFromBackendAddress: false
-          requestTimeout: 20
+          requestTimeout: 20  //If a request to the backend server doesn't receive a response within 20 seconds, it's considered a timeout.
         }
       }
     ]
-    httpListeners: [
+    httpListeners: [  //This configuration section defines how the Application Gateway listens for incoming HTTP requests.
       {
-        name: 'myListener'
+        name: 'skListener'
         properties: {
-          frontendIPConfiguration: {
+          frontendIPConfiguration: {   //This specifies which frontend IP configuration to associate with the listener. 
             id: resourceId('Microsoft.Network/applicationGateways/frontendIPConfigurations', applicationGateWayName, 'appGwPublicFrontendIp')
           }
-          frontendPort: {
+          frontendPort: {   //It specifies the frontend port that the listener will use. 
             id: resourceId('Microsoft.Network/applicationGateways/frontendPorts', applicationGateWayName, 'port_80')
           }
-          protocol: 'Http'
-          requireServerNameIndication: false
+          protocol: 'Http'  //This sets the protocol to HTTP, indicating that the listener is for handling HTTP traffic.
+          requireServerNameIndication: false  //This property determines whether the listener requires the client to indicate the server name during the SSL handshake.
         }
       }
     ]
-    requestRoutingRules: [
+    requestRoutingRules: [  //Another configuration section that defines how incoming requests should be routed based on certain conditions
       {
-        name: 'myRoutingRule'
+        name: 'skRoutingRule'
         properties: {
           ruleType: 'Basic'
           httpListener: {
-            id: resourceId('Microsoft.Network/applicationGateways/httpListeners', applicationGateWayName, 'myListener')
+            id: resourceId('Microsoft.Network/applicationGateways/httpListeners', applicationGateWayName, 'skListener')
           }
           backendAddressPool: {
-            id: resourceId('Microsoft.Network/applicationGateways/backendAddressPools', applicationGateWayName, 'myBackendPool')
+            id: resourceId('Microsoft.Network/applicationGateways/backendAddressPools', applicationGateWayName, 'skBackendPool')
           }
           backendHttpSettings: {
-            id: resourceId('Microsoft.Network/applicationGateways/backendHttpSettingsCollection', applicationGateWayName, 'myHTTPSetting')
+            id: resourceId('Microsoft.Network/applicationGateways/backendHttpSettingsCollection', applicationGateWayName, 'skHTTPSetting')
           }
         }
       }
     ]
-    probes: [
+    probes: [  //Health probes are used to check the status of backend resources to determine if they are healthy and should receive traffic.
       {
-        name: 'myHealthProbe'
+        name: 'skHealthProbe'
         properties: {
-          protocol: 'Http' // or 'Https' for secure connections
-          host: 'example.com' // host to probe
-          path: '/' // path to request
-          interval: 30 // probe interval in seconds
-          timeout: 120 // probe timeout in seconds
-          unhealthyThreshold: 3 // consecutive failures to mark as unhealthy
+          protocol: 'Http' // This specifies the protocol used for the health probe, You can also use 'Https' for secure connections.
+          host: 'example.com' // The health probe will send requests to this host.
+          path: '/' // It specifies the path to request during the health probe. Here, it's set to '/' indicating the root path.
+          interval: 30 //The probe will check the health of backend resources every 30 seconds.
+          timeout: 120 //If a probe request doesn't receive a response within 120 seconds, it's considered a failure.
+          unhealthyThreshold: 3 //If a resource fails the probe three times in a row, it's considered unhealthy.
         }
       }
     ]
-    enableHttp2: false
-    autoscaleConfiguration: {
-      minCapacity: 0
-      maxCapacity: 10
+    enableHttp2: false  //This setting specifies whether HTTP/2 is enabled or disabled. In this case, HTTP/2 is disabled. 
+    autoscaleConfiguration: {  //Autoscaling allows the Application Gateway to automatically adjust its capacity based on demand.
+      minCapacity: 0 // This sets the minimum capacity for the Application Gateway to 0 when low demand to reduce costs
+      maxCapacity: 10  //This sets the maximum capacity for the Application Gateway to 10 for high demand.
     }
   }
   dependsOn: [
-    publicIPAddress
+    publicIPAddress  // AppGateway depends on Public IP address
   ]
 }
 
@@ -213,7 +214,7 @@ resource nsg_backend 'Microsoft.Network/networkSecurityGroups@2022-11-01' = {
       }
       { name: 'http'
         properties: {
-          access: 'Allow' // later op deny na ssl termination
+          access: 'Allow' 
           direction: 'Inbound'
           priority: 200
           protocol: 'Tcp'
@@ -230,9 +231,9 @@ resource nsg_backend 'Microsoft.Network/networkSecurityGroups@2022-11-01' = {
           priority: 400
           protocol: 'Tcp'
           sourcePortRange: '*'
-          sourceAddressPrefix: '*' // admin server of ip als je ssh forwarding doet
+          sourceAddressPrefix: '*' 
           destinationPortRange: '22'
-          destinationAddressPrefix: '*' // waarschijnlijk nog specifieker maken
+          destinationAddressPrefix: '*' 
         }
       }
       {

@@ -43,7 +43,7 @@ module storageAccountModule './Modules_v1.0/storageaccount.bicep' = {
 }
 
 //Reference to keyvault module
-module keyvaultModule 'Modules_v1.0/keyvault.bicep' = {
+module keyvaultModule 'Modules_v1.0/keyvaultv1.0.bicep' = {
   name: 'keyvaultModule'
  // Other module properties
  params: {
