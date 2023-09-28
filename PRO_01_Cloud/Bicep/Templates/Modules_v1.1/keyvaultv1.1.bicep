@@ -7,10 +7,10 @@ param location string = resourceGroup().location
 //description of the managed identity
 param managed_id string = 'userIDx${uniqueString(resourceGroup().id)}'
 
-//discription of tenantID
+//discription of tenantID, which can be found Azure Active Directory (Azure AD)
 param tenantID string = 'de60b253-74bd-4365-b598-b9e55a2b208d'
 
-//discription of objectID
+//discription of objectID, which can be found Azure Active Directory (Azure AD)
 param objectID string = 'a04a1d40-0b09-48f7-91a7-d32abf5a1e31'
 
 //description of name of secret

@@ -120,8 +120,9 @@ resource applicationGateWay 'Microsoft.Network/applicationGateways@2021-05-01' =
       {
         name: 'skBackendPool'
         properties: {}
-      }
-    ]
+  }
+]
+
     backendHttpSettingsCollection: [ //This section configures the HTTP settings for routing requests to the backend resources.
       {
         name: 'skHTTPSetting'
@@ -451,7 +452,7 @@ resource autoscaleHost 'Microsoft.Insights/autoscalesettings@2022-10-01' = {
 
 //check if you have selected the right path (cd Modules_v1.1)
 
-//az deployment group create --template-file ScaleSet.bicep --resource-group cloud11_project --parameters location='westeurope'
+//az deployment group create --template-file AppGw_VMss.bicep --resource-group cloud11_project --parameters location='westeurope'
 //you need provide securestring value for 'webadmin_password' (? for help): haseeb@03
  
 
