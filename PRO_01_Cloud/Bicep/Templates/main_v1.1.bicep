@@ -133,15 +133,16 @@ module AdminserverModule 'Modules_v1.1/Adminserver.bicep' = {
 
 //az deployment group create --template-file main_v1.1.bicep --resource-group cloud11_project
 
-//Please provide string value for 'storageAccountName' (? for help): lily1
-//Please provide securestring value for 'pass' (? for help): adminpass1
-//Please provide string value for 'certpass' (? for help): certpass1
-//Please provide securestring value for 'WebUsername' (? for help): mimzy
-//Please provide securestring value for 'WebPasswordOrKey' (? for help): haseeb@03
-//Please provide securestring value for 'webadmin_password' (? for help): Haziq@2023
-//Please provide securestring value for 'AdminUName' (? for help): mimzy2
-//Please provide securestring value for 'AdminPW' (? for help): Haziq@2023
+//Please provide string value for 'storageAccountName' (? for help): 
+//Please provide securestring value for 'pass' (? for help): 
+//Please provide string value for 'certpass' (? for help): 
+//Please provide securestring value for 'WebUsername' (? for help):
+//Please provide securestring value for 'WebPasswordOrKey' (? for help): 
+//Please provide securestring value for 'webadmin_password' (? for help):
+//Please provide securestring value for 'AdminUName' (? for help): 
+//Please provide securestring value for 'AdminPW' (? for help): 
 
  
 //check in Azure portal
+
 
